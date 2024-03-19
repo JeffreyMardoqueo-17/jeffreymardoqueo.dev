@@ -10,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkPurple: "#280133",
+        darkPurple: "#17021d",
         lightPurple: "#ffff",
         lightText: "#280133",
-        hoverBG: "#e4b6ffc7", 
+        hoverBG: "#e070ff", 
       },
     },
   },
