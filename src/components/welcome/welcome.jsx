@@ -2,18 +2,33 @@ import React from 'react';
 
 const Welcome = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 md:p-10">
-            <div className="md:w-1/2 text-center md:text-left">
-                <h1 className="text-2xl md:text-4xl font-bold mb-4 dark:text-pink-300 text-darkPurple">Me llamo Jeffrey Mardoqueo</h1>
-                <p className="text-lg md:text-xl mb-4 text-darkPurple dark:text-lightPurple">Soy desarrollador de software.</p>
-                <button className="bg-darkPurple dark:bg-hoverBG  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Descargar currículum
-                </button>
+        <section className="pt-10 overflow-hidden dark:bg-darkPurple bg-lightPurple md:pt-0 sm:pt-16 2xl:pt-16">
+            <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div className="grid items-center grid-cols-1 md:grid-cols-2">
+
+                    <div>
+                        <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Hey 👋 soy
+                            <br className="block sm:hidden" /> <span className='dark:text-pink-300 text-pink-400'>Jeffrey </span>
+                        </h2>
+                        <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8">
+                            Amet minim mollit non deserunt
+                            ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                            Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                        <button className="bg-darkPurple mt-4 dark:bg-hoverBG  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Descargar currículum
+                        </button>
+
+                    </div>
+
+                    <div className="relative mt-9">
+                        <img className="absolute inset-x-0 bottom-0 -mb-12 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+                        {/* foto mia */}
+                        <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="/imgs/FOOTOO.png" alt="" />
+                    </div>
+                </div>
             </div>
-            <div className="md:w-1/2 mt-4 md:mt-0 w-1/1 dark:bg-hoverBG bg-darkPurple ">
-                <img src="/imgs/FOOTOO.png" alt="Foto de Jeffrey Mardoqueo" className="w-full md:h-auto rounded" />
-            </div>
-        </div>
+        </section>
     );
 };
 
