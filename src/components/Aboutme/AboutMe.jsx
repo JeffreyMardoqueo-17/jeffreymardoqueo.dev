@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const AboutMe = () => {
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
     return (
-       <div>
+        <body className={`font-sans antialiased leading-normal tracking-wider`}>
+            <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 md:p-10">
-            <div className="md:w-1/2 text-center md:text-left">
-                <h1 className="text-2xl md:text-4xl font-bold mb-4 dark:text-pink-300 text-darkPurple">Me llamo Jeffrey Mardoqueo</h1>
-                <p className="text-lg md:text-xl mb-4 text-darkPurple dark:text-lightPurple">Soy desarrollador de software.</p>
-                <button className="bg-darkPurple dark:bg-hoverBG  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Descargar currículum
-                </button>
+                <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+                    <div className="p-4 md:p-12 text-center lg:text-left">
+                        {/* Image for mobile view */}
+                        <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/MP0IUfwrn0A')" }}></div>
+                        <h1 className="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
+                        {/* Rest of the content... */}
+                    </div>
+                </div>
+                {/* Img Col */}
+                <div className="w-full lg:w-2/5">
+                    <img src="https://source.unsplash.com/MP0IUfwrn0A" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+                </div>
             </div>
-         <div className="md:w-1/2 mt-4 md:mt-0 w-1/1 border-4 border-hoverBG dark:border-none dark:bg-hoverBG bg-darkPurple rounded-full overflow-hidden">
-    <img src="/imgs/FOOTOO.png" alt="Foto de Jeffrey Mardoqueo" className="w-full h-full object-cover" />
-</div>
-
-        </div>
-       </div>
+        </body>
     );
-}
+};
 
 export default AboutMe;
