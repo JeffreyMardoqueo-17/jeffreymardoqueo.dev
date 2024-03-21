@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa"; // Icono de GitHub
 
 
 const Menu = ({ toggleTheme, theme }) => {
-    const icon = theme === 'dark' ? <WiDaySunny className="w-8 h-8 fill-current" /> : <MdDarkMode className="w-8 h-8 fill-current" />;
+    const icon = theme === 'dark' ? <MdDarkMode className="w-8 h-8 fill-current" /> : < WiDaySunny  className="w-8 h-8 fill-current" />;
 
     const handleClick = (e) => {
         e.preventDefault(); // Evitar que la página se desplace hacia arriba

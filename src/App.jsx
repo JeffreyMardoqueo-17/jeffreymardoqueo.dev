@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Menu from './components/Menu/Menu';
 import Welcome from './components/welcome/welcome';
 import AboutMe from './components/Aboutme/AboutMe';
-import  {Estudio}  from './components/Estudio/Estudio';
+import Estudio from './components/Estudio/Estudio';
 
 const App = () => {
   const [theme, setTheme] = useState(() => {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
   });
 
   const toggleTheme = () => {
