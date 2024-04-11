@@ -14,14 +14,14 @@ const AboutMe = () => {
                 <div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
                     <div className="p-4 md:p-12 text-center lg:text-left">
                         {/* Image for mobile view */}
-                        <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/MP0IUfwrn0A')" }}></div>
+                        <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('/imgs/SILUETA.jpg')" }}></div>
                         <h1 className="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
                         {/* Rest of the content... */}
                     </div>
                 </div>
                 {/* Img Col */}
                 <div className="w-full lg:w-2/5">
-                    <img src="https://source.unsplash.com/MP0IUfwrn0A" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+                    <img src="/imgs/SILUETA.jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
                 </div>
             </div>
         </body>
