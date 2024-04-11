@@ -9,11 +9,11 @@ const Welcome = () => {
                     <div>
                         <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Hey 👋 soy
                             <br className="block sm:hidden" /> <span className='dark:text-pink-300 text-hoverBG'>Jeffrey </span>
+
+                            {/* AGREGAR UNA SESION DONDE PUEDA SELECCIONAR EL USAURIO Y DECIR COMO ESTA */}
                         </h2>
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8">
-                            Amet minim mollit non deserunt
-                            ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet.
+                            Desarrollador frontend, aprendiendo constantemente para ser Desarrollador Full-Stak, disfruto creando productos dinámicos y creativos de principio a fin.Te invito a revisar mis proyectos!
                         </p>
                         <button className="bg-darkPurple mt-4 dark:bg-hoverBG  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             Descargar currículum
