@@ -2,7 +2,7 @@ import React from 'react';
 
 const Estudio = () => {
     return (
-        <div>
+        <div className='ml-2'>
 
             <ol class="relative border-s border-hoverBG">
                 <li class="mb-10 ms-4">
