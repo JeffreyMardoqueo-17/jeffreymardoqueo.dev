@@ -13,7 +13,7 @@ const Menu = ({ toggleTheme, theme }) => {
     };
 
     return (
-        <body className="flex items-center justify-center h-screen p-2 space-x-6 bg-lightPurple dark:bg-darkPurple">
+        <div className="flex items-center justify-center h-screen p-2 space-x-6 bg-lightPurple dark:bg-darkPurple">
             {/* <!-- Component Start --> */}
             <div className="flex flex-col items-left w-11  h-auto overflow-hidden  text-darkPurple dark:to-blue-50 dark:text-lightPurple">
                 <a className="flex items-center justify-center mt-3" href="#" onClick={handleClick}>
@@ -30,7 +30,7 @@ const Menu = ({ toggleTheme, theme }) => {
                     </a>
                 </div>
             </div>
-        </body>
+        </div>
     );
 };
 
