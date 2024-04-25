@@ -34,7 +34,7 @@ const TechnologiesPage = () => {
     ];
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md">
              <h2 className="text-3xl text-center mb-6 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Habilidades 
                             <br className="block sm:hidden" /> <span className=' text-hoverBG'>Relevantes </span>
 
