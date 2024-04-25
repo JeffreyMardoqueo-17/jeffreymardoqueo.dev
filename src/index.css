@@ -23,13 +23,13 @@
 
  /* Estilo para el riel de la barra de desplazamiento */
  ::-webkit-scrollbar-track {
-   background: #b6b6b6;
+   background: #080B33;
    /* Color de fondo del riel */
  }
 
  /* Estilo para el pulgar de la barra de desplazamiento (la parte que se arrastra) */
  ::-webkit-scrollbar-thumb {
-   background: red;/* Color del pulgar de la barra de desplazamiento */
+   background:#101563;/* Color del pulgar de la barra de desplazamiento */
  }
 
  /* Estilo para el pulgar de la barra de desplazamiento al pasar el mouse sobre él */

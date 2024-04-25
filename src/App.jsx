@@ -5,7 +5,8 @@ import AboutMe from './components/Aboutme/AboutMe';
 import Estudio from './components/Estudio/Estudio';
 import MenuInferior from './components/ManuInferior/MenuInferior'
 import useMediaQuery from './hooks/useMediaQuery';
-import MenuCircle from './components/MenuCircle/MenuCircle';
+// import TechnologiesPage from './Pages/TechnologiesPage';
+import TechnologiesPage from './Pages/TechnologiesPage';
 const App = () => {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -39,10 +40,13 @@ const App = () => {
           <Welcome />
           <AboutMe />
           <Estudio />
-          <MenuCircle />
-          {isMobile && (
-            <MenuInferior />
-          )}
+          <TechnologiesPage />
+          <div>
+            {isMobile && (
+              // <MenuInferior />
+              <Menu toggleTheme={toggleTheme} theme={theme}></Menu>
+            )}
+          </div>
         </div>
       </div>
     </div>
