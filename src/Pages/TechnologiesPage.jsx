@@ -38,8 +38,20 @@ const TechnologiesPage = () => {
             <h1 className="text-3xl font-bold mb-4">Tecnologías que manejo</h1>
             <ul className="grid grid-cols-3 gap-4">
                 {technologies.map((tech, index) => (
-                    <li key={index} className="text-center cursor-pointer" onClick={() => handleIconClick(tech.name)} onMouseEnter={() => setSelectedTech(tech.name)} onMouseLeave={() => setSelectedTech(null)}>
-                        {tech.icon}
+                    <li key={index} className="relative">
+                        <div
+                            className="absolute top-0 left-0 right-0 bottom-0 bg-white bg-opacity-75 flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-100"
+                            onClick={() => handleIconClick(tech.name)}
+                            onMouseEnter={() => setSelectedTech(tech.name)}
+                            onMouseLeave={() => setSelectedTech(null)}
+                        >
+                            <p className="text-lg font-bold">{tech.name}</p>
+                        </div>
+                        <div
+                            className="text-center cursor-pointer"
+                        >
+                            {tech.icon}
+                        </div>
                     </li>
                 ))}
             </ul>
