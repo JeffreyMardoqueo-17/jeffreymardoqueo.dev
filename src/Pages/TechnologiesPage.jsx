@@ -30,7 +30,6 @@ const TechnologiesPage = () => {
         { name: 'Bootstrap', icon: <FaBootstrap className="text-purple-800 w-24 h-24 absolute inset-0 m-auto" /> },
         { name: 'C Sharp', icon: <SiCsharp className="text-purple-700 w-24 h-24 absolute inset-0 m-auto" /> },
         { name: 'GitHub', icon: <FaGithub className="bg-black text-white w-24 h-24 rounded-full p-3 absolute inset-0 m-auto" /> }
-        // Agrega más tecnologías según sea necesario
     ];
 
     return (
@@ -38,7 +37,6 @@ const TechnologiesPage = () => {
             <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Habilidades
                 <br className="block sm:hidden" /> <span className=' text-hoverBG'>Relevantes </span>
 
-                {/* AGREGAR UNA SESION DONDE PUEDA SELECCIONAR EL USAURIO Y DECIR COMO ESTA */}
             </h2>
             <ul className="grid grid-cols-3 gap-4">
                 {technologies.map((tech, index) => (
