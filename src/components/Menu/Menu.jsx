@@ -2,6 +2,11 @@ import React from 'react';
 import { MdDarkMode } from "react-icons/md"; // Icono de la luna
 import { WiDaySunny } from "react-icons/wi"; // Icono de sol
 import { FaGithub } from "react-icons/fa"; // Icono de GitHub
+import { FaUser } from "react-icons/fa"; //ABOUTME 
+import { MdClass } from "react-icons/md";
+import { SiGmail, SiHyperskill } from "react-icons/si";
+import { HiBriefcase } from "react-icons/hi2";
+import { CgMail } from "react-icons/cg";
 
 
 const Menu = ({ toggleTheme, theme }) => {
@@ -15,7 +20,7 @@ const Menu = ({ toggleTheme, theme }) => {
     return (
         <div className="flex items-center justify-center h-screen p-2 space-x-6 bg-lightPurple dark:bg-darkPurple">
             {/* <!-- Component Start --> */}
-            <div className="flex flex-col items-left w-11  h-auto overflow-hidden  text-darkPurple dark:to-blue-50 dark:text-lightPurple">
+            <div className="flex flex-col items-left w-11 p-2  h-auto overflow-hidden  text-darkPurple dark:to-blue-50 dark:text-lightPurple">
                 <a className="flex items-center justify-center mt-3" href="#" onClick={handleClick}>
                     {icon}
                 </a>
@@ -27,6 +32,24 @@ const Menu = ({ toggleTheme, theme }) => {
                     </a>
                     <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
                         <FaGithub className='w-6 h-6 stroke-current' />
+                    </a>
+                    {/* aboutme */}
+                    <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                        <FaUser  className='w-6 h-6 stroke-current' />
+                    </a>
+                    {/* estudios */}
+                     <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                        <MdClass  className='w-6 h-6 stroke-current dark:text-white' />
+                    </a>
+                    {/* habilidades */}
+                     <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                        <SiHyperskill  className='w-6 h-6 stroke-current dark:text-white' />
+                    </a>
+                     <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                        <HiBriefcase  className='w-6 h-6 stroke-current dark:text-white' />
+                    </a>
+                     <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                        <SiGmail  className='w-6 h-6 stroke-current dark:text-white' />
                     </a>
                 </div>
             </div>
