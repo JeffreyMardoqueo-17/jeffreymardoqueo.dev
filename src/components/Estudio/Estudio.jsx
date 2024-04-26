@@ -30,5 +30,4 @@ const Estudio = () => {
         </div>
     );
 }
-
 export default Estudio;

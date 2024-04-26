@@ -34,12 +34,12 @@ const TechnologiesPage = () => {
     ];
 
     return (
-        <div className="container mx-auto p-4 bg-slate-700 bg-opacity-50 backdrop-filter backdrop-blur-md">
-             <h2 className="text-3xl text-center mb-6 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Habilidades 
-                            <br className="block sm:hidden" /> <span className=' text-hoverBG'>Relevantes </span>
+        <div className="container mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md" lang="en">
+            <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Habilidades
+                <br className="block sm:hidden" /> <span className=' text-hoverBG'>Relevantes </span>
 
-                            {/* AGREGAR UNA SESION DONDE PUEDA SELECCIONAR EL USAURIO Y DECIR COMO ESTA */}
-                        </h2>
+                {/* AGREGAR UNA SESION DONDE PUEDA SELECCIONAR EL USAURIO Y DECIR COMO ESTA */}
+            </h2>
             <ul className="grid grid-cols-3 gap-4">
                 {technologies.map((tech, index) => (
                     <li key={index} className="relative group" onClick={() => handleIconClick(tech.name)} onMouseEnter={() => setSelectedTech(tech.name)} onMouseLeave={() => setSelectedTech(null)}>
@@ -47,7 +47,7 @@ const TechnologiesPage = () => {
                             {tech.icon}
                         </div>
                         {selectedTech === tech.name && (
-                            <p className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded">{tech.name}</p>
+                            <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded">{tech.name}</p>
                         )}
                     </li>
                 ))}
