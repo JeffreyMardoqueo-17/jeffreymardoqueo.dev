@@ -31,3 +31,4 @@ const MenuInferior = ({ toggleTheme, theme }) => {
 };
 
 export default MenuInferior;
+
