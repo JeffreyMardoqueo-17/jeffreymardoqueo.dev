@@ -45,7 +45,7 @@ const App = () => {
           <Portafolio />
           <div className='mt-16'>
             {isMobile && (
-              <MenuInferior />
+              <MenuInferior toggleTheme={toggleTheme} theme={theme}/>
             )}
           </div>
         </div>
