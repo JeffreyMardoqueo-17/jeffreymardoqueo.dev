@@ -13,13 +13,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkPurple: "#060715",
+        darkPurple: "#0B050E",
         lightPurple: "#ffff",
         lightText: "#280133",
         hoverBG: "#FF1717",
         fecha: "#7C7C7C",
         rojoClaro: "#FF5B5B",
-        azul: "#2134E9"
+        azul: "#2134E9",
+        redPasion: "#FF1717"
       },
     },
   },
