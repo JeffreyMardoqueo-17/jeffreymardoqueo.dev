@@ -31,10 +31,10 @@ const MenuInferior = ({ toggleTheme, theme }) => {
                     <FaGithub className='w-8 h-8 stroke-current dark:text-white' />
                 </a>
                 {/* aboutme */}
-                <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="#">
                     <FaUser className='w-6 h-6 stroke-current dark:text-white' />
                 </a>
-                <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="https://github.com/JeffreyMardoqueo-17">
+                <a className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG " href="#">
                     <MdClass className='w-6 h-6 stroke-current dark:text-white' />
                 </a>
                 {/* estos no deben aparecer hasta que yo le de clic a la flecha para ver mas */}
