@@ -17,7 +17,7 @@ const AboutMe = () => {
                         <div className="block lg:hidden rounded-full mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: "url('/imgs/peer.png')" }}></div>
                         <h1 className="text-3xl font-bold pt-8 lg:pt-0 dark:text-redPasion">¡Sobre mi!</h1>
                         {/* Rest of the content... */}
-                        <p className='ml-2 dark:text-gray-100 text-justify'>Actualmente soy un estudiante, con ambisiones grandes de crecer en el ambito del desarrollo de Software, mi objetivo es ser arquitecto de software, tengo 18 años,soy una persona que siempre busca estar aprendiendo cosas nuevas, que se esfuerza por lo que quiere, aqui puedes ver mas adelante parte mi personalidad ¡CONTINUA VIENDO MI PORTAFOLIO! </p>
+                        <p className='ml-2 dark:text-gray-100 text-justify'>Actualmente soy un estudiante, con ambisiones grandes de crecer en el ambito del desarrollo de Software, mi objetivo es ser arquitecto de software, tengo 18 años,soy una persona que siempre busca estar aprendiendo cosas nuevas, que se esfuerza por lo que quiere, aqui puedes ver mas adelante parte mis conocimientos ¡CONTINUA VIENDO MI PORTAFOLIO! </p>
                     </div>
                 </div>
                 {/* Img Col */}
