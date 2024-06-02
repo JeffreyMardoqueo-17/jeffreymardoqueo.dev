@@ -5,9 +5,11 @@ import AboutMe from './components/Aboutme/AboutMe';
 import Estudio from './components/Estudio/Estudio';
 import MenuInferior from './components/ManuInferior/MenuInferior'
 import useMediaQuery from './hooks/useMediaQuery';
+
 // import TechnologiesPage from './Pages/TechnologiesPage';
 import TechnologiesPage from './Pages/TechnologiesPage';
 import Portafolio from './components/Portafolio/Portafolio';
+
 const App = () => {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -45,6 +47,10 @@ const App = () => {
               <MenuInferior toggleTheme={toggleTheme} theme={theme}/>
             )}
           </div>
+          {isMobile && (
+            <MenuInferior />
+          )}
+
         </div>
       </div>
     </div>

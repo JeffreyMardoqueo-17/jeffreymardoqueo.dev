@@ -3,8 +3,12 @@ import React from 'react';
 const Estudio = () => {
     return (
         <div className='ml-2'>
+
             <h1 className='text-3xl font-bold mb-5 text-redPasion'>Educacion Superior</h1>
             <ol class="relative border-s ml-9 border-hoverBG">
+
+
+            <ol class="relative border-s border-hoverBG">
                 <li class="mb-10 ms-4">
                     <div class="absolute w-3 h-3 bg-rojoClaro rounded-full mt-1.5 -start-1.5 border border-hoverBG "></div>
                     <time class="mb-1 text-xl font-normal leading-none text-rojoClaro">ESFE/AGAPE 2023 - 2024</time>
