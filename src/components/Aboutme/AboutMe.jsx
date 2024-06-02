@@ -8,14 +8,14 @@ const AboutMe = () => {
     };
 
     return (
-        <div className={`font-sans antialiased leading-normal tracking-wider min-h-screen flex items-center justify-center`}>
-            <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 items-center h-auto mx-auto my-8 lg:my-0 gap-4 p-4 lg:p-8 rounded-lg">
+        <div className={`font-sans antialiased leading-normal tracking-wider min-h-0 flex items-center justify-center`}>
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-auto gap-4 rounded-lg">
 
-                <div id="profile" className="w-full rounded-lg opacity-75 p-4 lg:p-8">
-                    <div className="text-center lg:text-left">
+                <div id="profile" className="w-full  rounded-lg opacity-75 ">
+                    <div className="text-center lg:text-left p-2">
                         {/* Image for mobile view */}
                         <div className="block lg:hidden rounded-full mx-auto h-32 w-32 bg-cover bg-center" style={{ backgroundImage: "url('/imgs/peer.png')" }}></div>
-                        <h1 className="text-3xl font-bold pt-4 lg:pt-0 dark:text-redPasion">¡Sobre mí!</h1>
+                        <h1 className='text-3xl font-bold mb-5 text-redPasion'>Sobre mi</h1>
                         {/* Rest of the content... */}
                         <p className="mt-4 dark:text-gray-100 text-justify">
                             Actualmente soy un estudiante con grandes ambiciones de crecer en el ámbito del desarrollo de software. Mi objetivo es ser arquitecto de software. Tengo 18 años y siempre busco estar aprendiendo cosas nuevas y esforzándome por lo que quiero.
@@ -24,8 +24,8 @@ const AboutMe = () => {
                             <strong>Cualidades:</strong> Perseverante, detallista y proactivo. Me esfuerzo por mantenerme actualizado con las últimas tecnologías y mejores prácticas en el desarrollo de software.
                         </p>
                         <p className="mt-4 dark:text-gray-100 text-justify">
-                            <strong>Habilidades sociales:</strong> 
-                            <ul className="list-disc list-inside">
+                            <strong>Habilidades sociales:</strong>
+                            <ul className="list-disc list-inside text-justify">
                                 <li>Soy colaborador y me gusta trabajar en equipo.</li>
                                 <li>Disfruto resolviendo problemas y encontrando soluciones eficientes.</li>
                                 <li>Tengo habilidades de liderazgo y me esfuerzo por motivar a mi equipo a alcanzar sus objetivos.</li>

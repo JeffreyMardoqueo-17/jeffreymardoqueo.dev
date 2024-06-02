@@ -38,7 +38,7 @@ const TechnologiesPage = () => {
     ]
 
     return (
-        <div className="container mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6" lang="en">
+        <div className="container  mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6" lang="en">
 
             <div className="container mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6" lang="en">
                 <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Frontend
