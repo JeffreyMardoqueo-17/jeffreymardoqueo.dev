@@ -50,7 +50,7 @@ const TechnologiesPage = () => {
                                 {tech.icon}
                             </div>
                             {selectedTech === tech.name && (
-                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded">{tech.name}</p>
+                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded cursor-pointer">{tech.name}</p>
                             )}
                         </li>
                     ))}
@@ -66,7 +66,7 @@ const TechnologiesPage = () => {
                                 {tech.icon}
                             </div>
                             {selectedTech === tech.name && (
-                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded">{tech.name}</p>
+                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded cursor-pointer">{tech.name}</p>
                             )}
                         </li>
                     ))}
@@ -83,7 +83,7 @@ const TechnologiesPage = () => {
                                 {tech.icon}
                             </div>
                             {selectedTech === tech.name && (
-                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded">{tech.name}</p>
+                                <p aria-hidden="true" className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white bg-gray-600 bg-opacity-75 rounded cursor-pointer">{tech.name}</p>
                             )}
                         </li>
                     ))}

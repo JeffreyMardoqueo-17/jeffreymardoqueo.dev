@@ -13,7 +13,7 @@ const Welcome = () => {
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8 mb-10">
                             Desarrollador frontend en React, aprendiendo constantemente para ser Desarrollador Full-Stack en .NET, disfruto creando productos dinámicos y creativos de principio a fin. Te invito a revisar mis proyectos!
                         </p>
-                        <a href="/Document/Jeffrey_Mardoqueo_CV.pdf" download className="bg-darkPurple mt-10 dark:bg-hoverBG hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <a href="/Document/Jeffrey_Mardoqueo_CV.pdf" download className="bg-darkPurple mt-10 dark:bg-hoverBG hover:bg-blue-700 text-white font-bold py-2 px-4 rounded visited:bg-darkPurple visited:bg-hoverBG select-none">
                             Descargar currículum
                         </a>
                     </div>
