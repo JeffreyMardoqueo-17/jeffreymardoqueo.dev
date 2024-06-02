@@ -35,7 +35,7 @@ const App = () => {
           <Menu toggleTheme={toggleTheme} theme={theme} />
         </div>
       )}
-      <div className={isMobile ? "flex-1 h-full flex justify-center items-top bg-lightPurple dark:bg-darkPurple" : "flex-1 ml-20 h-full flex justify-center items-top bg-lightPurple dark:bg-darkPurple"}>
+      <div className={isMobile ? "flex-1 h-full flex justify-center items-top bg-lightPurple dark:bg-darkPurple" : "flex-1 ml-0 h-full flex justify-center items-top bg-lightPurple dark:bg-darkPurple"}>
         <div className="flex flex-col ml-2">
           <Welcome />
           <AboutMe />
