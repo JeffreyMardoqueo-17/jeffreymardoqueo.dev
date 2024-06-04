@@ -1,8 +1,7 @@
 import React from 'react';
-import { MdDarkMode } from "react-icons/md"; // Icono de la luna
-import { WiDaySunny } from "react-icons/wi"; // Icono de sol
-import { FaGithub } from "react-icons/fa"; // Icono de GitHub
-import { FaUser } from "react-icons/fa"; // ABOUTME 
+import { MdDarkMode } from "react-icons/md";
+import { WiDaySunny } from "react-icons/wi";
+import { FaGithub, FaUser } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
 import { SiGmail, SiHyperskill } from "react-icons/si";
 import { HiBriefcase } from "react-icons/hi2";
@@ -12,8 +11,8 @@ const Menu = ({ toggleTheme, theme }) => {
     const icon = theme === 'dark' ? <MdDarkMode className="w-8 h-8 fill-current" /> : < WiDaySunny className="w-8 h-8 fill-current" />;
 
     const handleClick = (e) => {
-        e.preventDefault(); // Evitar que la página se desplace hacia arriba
-        toggleTheme(); // Cambiar el tema
+        e.preventDefault();
+        toggleTheme();
     };
 
     return (
