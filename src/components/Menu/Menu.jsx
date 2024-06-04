@@ -5,14 +5,15 @@ import { FaGithub, FaUser } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
 import { SiGmail, SiHyperskill } from "react-icons/si";
 import { HiBriefcase } from "react-icons/hi2";
+import { Link } from 'react-scroll';
 import './Menu.css';
 
 const Menu = ({ toggleTheme, theme }) => {
     const icon = theme === 'dark' ? <MdDarkMode className="w-8 h-8 fill-current" /> : < WiDaySunny className="w-8 h-8 fill-current" />;
 
     const handleClick = (e) => {
-        e.preventDefault();
-        toggleTheme();
+        e.preventDefault(); // Evitar que la página se desplace hacia arriba
+        toggleTheme(); // Cambiar el tema
     };
 
     return (
@@ -22,36 +23,32 @@ const Menu = ({ toggleTheme, theme }) => {
                     {icon}
                 </a>
                 <div className="flex flex-col items-center mt-3 border-t border-gray-700">
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="#">
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="home" smooth={true} duration={500}>
                         <svg className="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                         <span className="tooltip">Home</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
-                        <FaGithub className='w-6 h-6 stroke-current' />
-                        <span className="tooltip">GitHub</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
+                    </Link>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="aboutme" smooth={true} duration={500}>
                         <FaUser className='w-6 h-6 stroke-current' />
                         <span className="tooltip">About Me</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
+                    </Link>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="estudios" smooth={true} duration={500}>
                         <MdClass className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Estudios</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
+                    </Link>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="habilidades" smooth={true} duration={500}>
                         <SiHyperskill className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Habilidades</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
+                    </Link>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="proyectos" smooth={true} duration={500}>
                         <HiBriefcase className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Proyectos</span>
-                    </a>
-                    <a className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" href="https://github.com/JeffreyMardoqueo-17">
+                    </Link>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="correo" smooth={true} duration={500}>
                         <SiGmail className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Correo</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Estudio = () => {
     return (
-        <div className='container mx-auto p-4'>
+        <div id="estudios" className='container mx-auto p-4'>
             <div className='ml-2 grid grid-cols-1 lg:grid-cols-2 gap-4 select-none'>
                 <div className=''>
                     <h1 className='text-3xl font-bold mb-5 text-redPasion'>Educacion Superior</h1>
