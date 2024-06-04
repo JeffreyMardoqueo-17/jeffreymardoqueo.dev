@@ -3,24 +3,27 @@ import React from 'react';
 // Array de proyectos
 const proyectos = [
     {
-        nombre: 'Sistema de Gestión de Proyectos',
-        descripcion: 'Un sistema de gestión de proyectos que permite a los usuarios crear, organizar y supervisar proyectos de manera eficiente. Incluye funcionalidades para asignar tareas, hacer seguimiento del progreso y colaborar en equipo.',
-        imagen: 'https://luna1.co/16e4e2.png',
-        tecnologias: ['React', 'Tailwind CSS', 'Node.js']
+        "nombre": "Sistema de Control de Pagos - Frontend",
+        "descripcion": "Interfaz de usuario del Sistema de Control de Pagos, construida con React.js y Tailwind CSS para una experiencia fluida y receptiva.",
+        "tecnologias": [
+            "React.js",
+            "Tailwind CSS",
+            "Material UI",
+            "Typescript"
+            
+        ],
+        imagen: 'https://luna1.co/16e4e2.png'
     },
     {
-        nombre: 'Dashboard de Administración',
-        descripcion: 'Un dashboard de administración para visualizar y analizar datos relacionados con la gestión de proyectos. Proporciona gráficos interactivos, informes detallados y una interfaz fácil de usar.',
-        imagen: 'https://miro.medium.com/v2/resize:fit:1400/1*SvtF4kmd8mKZdQ6hLLMh8w.jpeg',
-        tecnologias: ['HTML', 'CSS', 'JavaScript']
-    },
-    {
-        nombre: 'Plataforma de E-learning',
-        descripcion: 'Una plataforma de aprendizaje en línea que ofrece cursos interactivos, videos educativos y evaluaciones. Los usuarios pueden aprender a su propio ritmo y obtener certificados al completar los cursos.',
-        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDJht-hBZFyfGCdGOVVyE5uv9gVJ5ygGi9XvGwDtitw&s',
-        tecnologias: ['React', 'Node.js', 'MongoDB']
+        "nombre": "Sistema de Control de Pagos - Backend",
+        "descripcion": "API RESTful del Sistema de Control de Pagos, desarrollada con Node.js, Express y SQL Server para administrar datos de pagos de manera eficiente.",
+        "tecnologias": [
+            "Node.js",
+            "Express",
+            "SQL Server"
+        ],
+        imagen: '../../../public/imgs/BackendREAL.jpg'
     }
-
 ];
 
 const Portafolio = () => {
