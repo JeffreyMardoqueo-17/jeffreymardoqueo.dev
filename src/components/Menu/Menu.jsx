@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdDarkMode } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
-import { FaGithub, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
 import { SiGmail, SiHyperskill } from "react-icons/si";
 import { HiBriefcase } from "react-icons/hi2";
@@ -12,8 +12,8 @@ const Menu = ({ toggleTheme, theme }) => {
     const icon = theme === 'dark' ? <MdDarkMode className="w-8 h-8 fill-current" /> : < WiDaySunny className="w-8 h-8 fill-current" />;
 
     const handleClick = (e) => {
-        e.preventDefault(); // Evitar que la página se desplace hacia arriba
-        toggleTheme(); // Cambiar el tema
+        e.preventDefault();
+        toggleTheme();
     };
 
     return (
@@ -37,11 +37,11 @@ const Menu = ({ toggleTheme, theme }) => {
                         <MdClass className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Estudios</span>
                     </Link>
-                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="habilidades" smooth={true} duration={500}>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="technologies" smooth={true} duration={500}>
                         <SiHyperskill className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Habilidades</span>
                     </Link>
-                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="proyectos" smooth={true} duration={500}>
+                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="portafolio" smooth={true} duration={500}>
                         <HiBriefcase className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Proyectos</span>
                     </Link>
@@ -56,3 +56,4 @@ const Menu = ({ toggleTheme, theme }) => {
 };
 
 export default Menu;
+
