@@ -17,7 +17,7 @@ const MenuInferior = ({ toggleTheme, theme }) => {
     };
 
     return (
-        <div className="fixed bottom-0 left-0 w-full ligth:bg-lightPurple bg-opacity-50 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md">
+        <div className="fixed bottom-0 left-0 w-full ligth:bg-lightPurple bg-opacity-50 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md ">
             <div className="flex justify-center p-2 space-x-6">
                 <a className="flex items-center justify-center" href="#" onClick={handleClick}>
                     {icon}

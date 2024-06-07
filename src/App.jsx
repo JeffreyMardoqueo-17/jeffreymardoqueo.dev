@@ -41,7 +41,7 @@ const App = () => {
           <div id="estudios"><Estudio /></div>
           <div id="technologies"><TechnologiesPage /></div>
           <div id="portafolio"><Portafolio /></div>
-          {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}
+          <div className='mt-14'> {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}</div>
         </div>
       </div>
     </div>
