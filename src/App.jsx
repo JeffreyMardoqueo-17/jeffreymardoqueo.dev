@@ -6,7 +6,7 @@ import AboutMe from './components/Aboutme/AboutMe';
 import Estudio from './components/Estudio/Estudio';
 import MenuInferior from './components/ManuInferior/MenuInferior';
 import useMediaQuery from './hooks/useMediaQuery';
-import TechnologiesPage from './Pages/TechnologiesPage';
+import TechnologiesPage from './Pages/Tecnologies/TechnologiesPage';
 import Portafolio from './components/Portafolio/Portafolio';
 
 const App = () => {
