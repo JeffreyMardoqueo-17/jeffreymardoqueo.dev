@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import Menu from './components/Menu/Menu';
-import Welcome from './components/welcome/welcome';
+import Welcome from './components/welcome/welcome'
 import AboutMe from './components/Aboutme/AboutMe';
 import Estudio from './components/Estudio/Estudio';
 import MenuInferior from './components/ManuInferior/MenuInferior';
@@ -15,6 +16,7 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
+
     theme === 'dark'
       ? document.documentElement.classList.add('dark')
       : document.documentElement.classList.remove('dark');
@@ -36,12 +38,12 @@ const App = () => {
       )}
       <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto bg-lightPurple dark:bg-darkPurple`}>
         <div className="flex flex-col items-center">
-          <div id="home"><Welcome /></div>
-          <div id="aboutme"><AboutMe /></div>
-          <div id="estudios"><Estudio /></div>
-          <div id="technologies"><TechnologiesPage /></div>
-          <div id="portafolio"><Portafolio /></div>
-          <div className='mt-14'> {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}</div>
+          <Welcome />
+          <AboutMe />
+          <Estudio />
+          <TechnologiesPage />
+          <Portafolio />
+          {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}
         </div>
       </div>
     </div>
