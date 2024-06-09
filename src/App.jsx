@@ -8,6 +8,7 @@ import MenuInferior from './components/ManuInferior/MenuInferior';
 import useMediaQuery from './hooks/useMediaQuery';
 import TechnologiesPage from './Pages/Tecnologies/TechnologiesPage';
 import Portafolio from './components/Portafolio/Portafolio';
+import Contact from './Pages/contact/Contact';
 
 const App = () => {
   const [theme, setTheme] = useState(() => {
@@ -43,6 +44,7 @@ const App = () => {
           <Estudio />
           <TechnologiesPage />
           <Portafolio />
+          <Contact />
           {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}
         </div>
       </div>
