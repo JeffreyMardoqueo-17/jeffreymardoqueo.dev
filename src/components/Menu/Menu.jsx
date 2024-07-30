@@ -3,7 +3,7 @@ import { MdDarkMode } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
 import { FaUser } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
-import { SiGmail, SiHyperskill } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 import { HiBriefcase } from "react-icons/hi2";
 import { Link } from 'react-scroll';
 import './Menu.css';
@@ -36,10 +36,6 @@ const Menu = ({ toggleTheme, theme }) => {
                     <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="estudios" smooth={true} duration={500}>
                         <MdClass className='w-6 h-6 stroke-current dark:text-white' />
                         <span className="tooltip">Estudios</span>
-                    </Link>
-                    <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="technologies" smooth={true} duration={500}>
-                        <SiHyperskill className='w-6 h-6 stroke-current dark:text-white' />
-                        <span className="tooltip">Habilidades</span>
                     </Link>
                     <Link className="relative flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple hover:text-lightPurple dark:hover:bg-hoverBG" to="portafolio" smooth={true} duration={500}>
                         <HiBriefcase className='w-6 h-6 stroke-current dark:text-white' />

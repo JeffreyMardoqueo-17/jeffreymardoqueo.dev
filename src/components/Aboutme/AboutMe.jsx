@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 
+const aboutMeData = {
+    description: "Actualmente soy un estudiante con grandes ambiciones de crecer en el ámbito del Desarrollo de software. Mi objetivo es ser arquitecto de software. Tengo 18 años y siempre busco estar aprendiendo cosas nuevas y esforzándome por lo que quiero.",
+    qualities: "Perseverante, detallista y proactivo. Me esfuerzo por mantenerme actualizado con las últimas tecnologías y mejores prácticas en el desarrollo de software.",
+    socialSkills: [
+        "Soy colaborador y me gusta trabajar en equipo.",
+        "Disfruto resolviendo problemas y encontrando soluciones eficientes."
+    ],
+    additionalInfo: "Aquí puedes ver más adelante parte de mis conocimientos. ¡CONTINÚA VIENDO MI PORTAFOLIO!"
+};
+
 const AboutMe = () => {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -8,73 +18,35 @@ const AboutMe = () => {
     };
 
     return (
-        <div className={`font-sans antialiased leading-normal tracking-wider min-h-0 flex items-center justify-center`}>
+        <div className={`font-sans antialiased leading-normal mt-2 tracking-wider min-h-0 flex items-center justify-center py-6`}>
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-auto gap-4 rounded-lg">
-
-                <div id="profile" className="w-full  rounded-lg opacity-75 ">
+                <div className="w-ful rounded-lg opacity-75 ">
                     <div className="text-center lg:text-left p-2">
                         {/* Image for mobile view */}
                         <div className="block lg:hidden rounded-full mx-auto h-32 w-32 bg-cover bg-center" style={{ backgroundImage: "url('/imgs/peer.png')" }}></div>
-                        <h1 className='text-3xl font-bold mb-5 text-redPasion'>Sobre mi</h1>
+                        <h1 className='text-3xl font-bold mb-10 text-redPasion'>Sobre Mi</h1>
                         {/* Rest of the content... */}
-
                         <p className="mt-4 text-gray-900 dark:text-gray-100 text-justify">
-                            Actualmente soy un estudiante con grandes ambiciones de crecer en el ámbito del  <strong className="font-semibold text-gray-900 dark:text-white font-bold">Desarrollo de software</strong> Mi objetivo es ser arquitecto de software. Tengo 18 años y siempre busco estar aprendiendo cosas nuevas y esforzándome por lo que quiero.
+                            {aboutMeData.description}
                         </p>
                         <p className="mt-4 dark:text-gray-100 text-justify">
-                            <strong className='dark:text-white'>Calidades:</strong> Perseverante, detallista y proactivo. Me esfuerzo por mantenerme actualizado con las últimas tecnologías y mejores prácticas en el desarrollo de software.
+                            <strong className='dark:text-white'>Calidades:</strong> {aboutMeData.qualities}
                         </p>
-
                         <p className="mt-4 text-justify">
-                            <strong>Habilidades sociales:</strong>
+                            <h1 className='text-3xl font-bold mb-10 text-redPasion'>Habilidades Sociales</h1>
                             <ul className="space-y-4 text-left text-black dark:text-gray-100">
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Soy colaborador y me gusta trabajar en equipo.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Disfruto resolviendo problemas y encontrando soluciones eficientes.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Tengo habilidades de liderazgo y me esfuerzo por motivar a mi equipo a alcanzar sus objetivos.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Soy empático y me esfuerzo por entender las perspectivas de los demás.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Tengo una actitud positiva y trato de inspirar a los demás con mi entusiasmo.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Soy un buen comunicador y me aseguro de que todos en el equipo estén alineados y comprendan sus roles y tareas.</span>
-                                </li>
-                                <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                    </svg>
-                                    <span>Soy flexible y me adapto bien a diferentes situaciones y cambios.</span>
-                                </li>
+                                {aboutMeData.socialSkills.map((skill, index) => (
+                                    <li key={index} className="flex items-center space-x-3 rtl:space-x-reverse">
+                                        <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                        </svg>
+                                        <span>{skill}</span>
+                                    </li>
+                                ))}
                             </ul>
                         </p>
-
                         <p className="mt-4 dark:text-gray-100 text-justify">
-                            Aquí puedes ver más adelante parte de mis conocimientos. ¡CONTINÚA VIENDO MI PORTAFOLIO!
+                            {aboutMeData.additionalInfo}
                         </p>
                     </div>
                 </div>

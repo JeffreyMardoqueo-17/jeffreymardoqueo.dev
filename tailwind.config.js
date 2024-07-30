@@ -20,7 +20,7 @@ module.exports = {
         fecha: "#7C7C7C",
         rojoClaro: "#FF5B5B",
         azul: "#2134E9",
-        redPasion: "#FF1717"
+        redPasion: "#ff0000"
       },
     },
   },
