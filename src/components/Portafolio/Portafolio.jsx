@@ -43,7 +43,7 @@ const desarrollo = [
 
 const Portafolio = () => {
     return (
-        <div id="portafolio" className="container mx-auto p-4">
+        <section id="portafolio" className="container mx-auto p-4">
             {/* Sección de Proyectos */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* Proyectos Completos */}
@@ -84,7 +84,7 @@ const Portafolio = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
