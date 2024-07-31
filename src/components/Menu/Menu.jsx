@@ -17,7 +17,7 @@ const Menu = ({ toggleTheme, theme }) => {
     };
 
     return (
-        <div className="fixed top-0 left-0 bottom-0 flex flex-col items-center p-2 w-20 bg-red-500   dark:bg-darkPurple">
+        <div className="fixed top-0 left-0 bottom-0 flex flex-col items-center p-2 w-20 bg-lightPurple   dark:bg-darkPurple">
             <div className="flex flex-col items-left w-11 p-2 h-auto overflow-hidden text-darkPurple dark:to-blue-50 dark:text-lightPurple">
                 <a className="flex items-center justify-center mt-3" href="#" onClick={handleClick}>
                     {icon}
