@@ -15,7 +15,7 @@ const AboutMe = () => {
     };
 
     return (
-        <div className={`font-sans antialiased leading-normal mt-2 tracking-wider min-h-0 flex items-center justify-center py-6`}>
+        <div id="aboutme" className={`font-sans antialiased leading-normal mt-2 tracking-wider min-h-0 flex items-center justify-center py-6`}>
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-auto gap-4 rounded-lg">
                 {/* Img Col */}
                 <div className="w-full">
