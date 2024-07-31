@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome = () => {
     return (
-        <section className="pt-10 overflow-hidden dark:bg-darkPurple bg-lightPurple md:pt-0 sm:pt-16 2xl:pt-16 h-full">
+        <section className="pt-10 overflow-hidden dark:bg-darkPurple bg-lightPurple md:pt-0 sm:pt-16 2xl:pt-16 h-full container">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid items-center grid-cols-1 md:grid-cols-2 select-none">
                     <div>

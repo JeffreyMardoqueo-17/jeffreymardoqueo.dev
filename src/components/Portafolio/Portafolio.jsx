@@ -1,8 +1,5 @@
-{/* <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Mis
-    <br className="block sm:hidden" /> <span className=' text-hoverBG'>Proyectos </span>
-</h2> */}
-
 import React from 'react';
+import Tarjeta from '../tarjeta/tarjeta'
 
 // Array de proyectos
 const proyectos = [
@@ -44,7 +41,6 @@ const desarrollo = [
     }
 ];
 
-
 const Portafolio = () => {
     return (
         <div className="container mx-auto p-4">
@@ -53,23 +49,18 @@ const Portafolio = () => {
                 {/* Proyectos Completos */}
                 <div>
                     <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Proyectos
-                        <br className="block sm:hidden" /> <span className=' text-hoverBG'>Completos </span>
+                        <br className="block sm:hidden" /> <span className='text-hoverBG'>Completos </span>
                     </h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4">
                         {proyectos.map((proyecto, index) => (
-                            <div key={index} className="border dark:border-slate-600 rounded-lg overflow-hidden shadow-md dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md ">
-                                <img src={proyecto.imagen} alt={proyecto.nombre} className="w-full h-48 object-cover" />
-                                <div className="p-4">
-                                    <h2 className="text-xl font-bold mb-2 text-redPasion">{proyecto.nombre}</h2>
-                                    <p className="text-gray-600 dark:text-gray-400 mb-2">{proyecto.descripcion}</p>
-                                    <div className="flex flex-wrap">
-                                        {proyecto.tecnologias.map((tecnologia, index) => (
-                                            <span key={index} className="bg-gray-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-900 mr-2 mb-2">{tecnologia}</span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
+                            <Tarjeta
+                                key={index}
+                                imagen={proyecto.imagen}
+                                nombre={proyecto.nombre}
+                                descripcion={proyecto.descripcion}
+                                tecnologias={proyecto.tecnologias}
+                            />
                         ))}
                     </div>
                 </div>
@@ -77,23 +68,18 @@ const Portafolio = () => {
                 {/* Proyectos en Desarrollo */}
                 <div>
                     <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Proyectos en
-                        <br className="block sm:hidden" /> <span className=' text-hoverBG'>Desarrollo </span>
+                        <br className="block sm:hidden" /> <span className='text-hoverBG'>Desarrollo </span>
                     </h2>
 
                     <div className="grid grid-cols-1 gap-4">
                         {desarrollo.map((proyecto, index) => (
-                            <div key={index} className="border dark:border-slate-600 rounded-lg overflow-hidden shadow-md dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md ">
-                                <img src={proyecto.imagen} alt={proyecto.nombre} className="w-full h-48 object-cover" />
-                                <div className="p-4">
-                                    <h2 className="text-xl font-bold mb-2 text-redPasion">{proyecto.nombre}</h2>
-                                    <p className="text-gray-600 dark:text-gray-400 mb-2">{proyecto.descripcion}</p>
-                                    <div className="flex flex-wrap">
-                                        {proyecto.tecnologias.map((tecnologia, index) => (
-                                            <span key={index} className="bg-gray-300 rounded-full px-2 py-1 text-sm font-semibold text-gray-900 mr-2 mb-2">{tecnologia}</span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
+                            <Tarjeta
+                                key={index}
+                                imagen={proyecto.imagen}
+                                nombre={proyecto.nombre}
+                                descripcion={proyecto.descripcion}
+                                tecnologias={proyecto.tecnologias}
+                            />
                         ))}
                     </div>
                 </div>

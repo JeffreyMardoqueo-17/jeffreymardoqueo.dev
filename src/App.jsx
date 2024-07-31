@@ -33,18 +33,18 @@ const App = () => {
   return (
     <div className="flex">
       {!isMobile && (
-        <div className="w-20 h-screen fixed">
+        <div className="w-20 h-screen fixed bg-green-300">
           <Menu toggleTheme={toggleTheme} theme={theme} />
         </div>
       )}
-      <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto bg-lightPurple dark:bg-darkPurple`}>
+      <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto  dark:bg-darkPurple`}>
         <div className="flex flex-col items-center">
           <Welcome />
           <AboutMe />
           <Estudio />
           <TechnologiesPage />
           <Portafolio />
-          <Contact />
+
           {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}
         </div>
       </div>
