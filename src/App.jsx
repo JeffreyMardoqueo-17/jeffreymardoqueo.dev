@@ -43,7 +43,7 @@ const App = () => {
           <Estudio />
           <TechnologiesPage />
           <Portafolio />
-          <Contact />
+          {/* <Contact /> */}
           {isMobile && <MenuInferior toggleTheme={toggleTheme} theme={theme} />}
         </div>
       </div>

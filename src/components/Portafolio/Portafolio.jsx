@@ -1,5 +1,5 @@
 import React from 'react';
-import Tarjeta from '../tarjeta/tarjeta'
+import Tarjeta from '../tarjeta/tarjeta';
 
 // Array de proyectos
 const proyectos = [
@@ -22,7 +22,18 @@ const proyectos = [
             "Express",
             "SQL Server"
         ],
-        imagen: '../../../public/imgs/BackendREAL.jpg'
+        imagen: '../../../imgs/BackendREAL.jpg'
+    },
+    {
+        "nombre": "Pagina Estatica de practica del Bootcamp sobre recetas",
+        "descripcion": "Pagina estatica de practica del Bootcamp de Frontend usando tecnologias como HTML, CSS y bootstrap, donde solo se muestra la receta, ademas solo era de hacer una replica de algo pero yo la hice un poquito mas como me gustaria para que no se viera tan basica.",
+        "tecnologias": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        imagen: '../../../imgs/recetas.png',
+        link: 'https://jeffreymardoqueo-17.github.io/Recetario-Practica/' // Se agrega el enlace aquí
     }
 ];
 
@@ -60,6 +71,7 @@ const Portafolio = () => {
                                 nombre={proyecto.nombre}
                                 descripcion={proyecto.descripcion}
                                 tecnologias={proyecto.tecnologias}
+                                link={proyecto.link} // Se pasa el link al componente Tarjeta
                             />
                         ))}
                     </div>
