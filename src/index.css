@@ -49,3 +49,25 @@
 }
 
 /* para la parte de atras, como pelotita dando vueltas  */
+/* Menu.css */
+.tooltip {
+  position: absolute;
+  left: 3rem;
+  /* Ajusta según la distancia deseada del icono */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
+  /* Para evitar que el texto se rompa en varias líneas */
+  z-index: 10;
+  /* Asegúrate de que la tooltip esté por encima de otros elementos */
+}
+
+.tooltip:hover {
+  opacity: 1;
+}

@@ -6,8 +6,9 @@ const Welcome = () => {
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid items-center grid-cols-1 md:grid-cols-2 select-none">
                     <div>
-                        <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Hey 👋 soy
-                            <br className="block sm:hidden" /> <span className=' text-hoverBG'>Jeffrey </span>
+                        <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">
+                            Hey 👋 soy<br className="block sm:hidden" />
+                            <span className=' text-hoverBG'>Jeffrey </span>
                         </h2>
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8 mb-10">
                             Desarrollador frontend en React, aprendiendo constantemente para ser Desarrollador Full-Stack en .NET, disfruto creando productos dinámicos y creativos de principio a fin. Te invito a revisar mis proyectos!
