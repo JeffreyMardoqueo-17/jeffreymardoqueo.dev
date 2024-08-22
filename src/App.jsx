@@ -10,6 +10,8 @@ import { WiDaySunny } from "react-icons/wi";
 import { FaUser, FaHome } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
+import { TbNut } from "react-icons/tb";
+import { RiSuitcaseFill } from "react-icons/ri";
 import { HiBriefcase } from "react-icons/hi2";
 // import { scrollToElement } from './scrollSmooth'; // Importa la función
 import { scrollToElement } from './funcions/scrollToElement';
@@ -39,8 +41,8 @@ const App = () => {
     { to: 'home', icon: <FaHome className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Home' },
     { to: 'aboutme', icon: <FaUser className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'About Me' },
     { to: 'estudios', icon: <MdClass className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Estudios' },
-    { to: 'portafolio', icon: <HiBriefcase className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Proyectos' },
-    { to: 'correo', icon: <SiGmail className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Correo' }
+    { to: 'portafolio', icon: <TbNut className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Proyectos' },
+    { to: 'correo', icon: <RiSuitcaseFill className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Correo' }
   ];
 
   return (

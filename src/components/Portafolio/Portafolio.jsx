@@ -12,7 +12,7 @@ const proyectos = [
             "Material UI",
             "Typescript"
         ],
-        imagen: 'https://luna1.co/16e4e2.png'
+        imagen: '../../../imgs/caezFrontend.png',
     },
     {
         "nombre": "Sistema de Control de Pagos - Backend",
@@ -33,8 +33,8 @@ const proyectos = [
             "Bootstrap"
         ],
         imagen: '../../../imgs/recetas.png',
-        link: 'https://jeffreymardoqueo-17.github.io/Recetario-Practica/' // Se agrega el enlace aquí
-    }
+        link: 'https://jeffreymardoqueo-17.github.io/Recetario-Practica/'
+    },
 ];
 
 const desarrollo = [
@@ -49,7 +49,20 @@ const desarrollo = [
             "Entity Framework"
         ],
         imagen: '../../../public/imgs/BackendREAL.jpg'
+    },
+    {
+        "nombre": "Landing Page Digital Work",
+        "descripcion": "Landing Page de servicios de estampados (camisas, tasas, gorras, llaveros, etc) para el local Digital Work, construida react.js y tailwind css para una experiencia fluida y receptiva.",
+        "tecnologias": [
+            "Vite",
+            "CSS",
+            "Tailwind CSS",
+            "React.js"
+        ],
+        imagen: '../../../imgs/digitalWork.png',
+        link: 'https://github.com/JeffreyMardoqueo-17/Digital-Work.git'
     }
+
 ];
 
 const Portafolio = () => {
@@ -91,6 +104,7 @@ const Portafolio = () => {
                                 nombre={proyecto.nombre}
                                 descripcion={proyecto.descripcion}
                                 tecnologias={proyecto.tecnologias}
+                                link={proyecto.link}
                             />
                         ))}
                     </div>
