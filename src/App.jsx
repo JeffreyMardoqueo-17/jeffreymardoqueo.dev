@@ -33,7 +33,7 @@ const App = () => {
 
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const icon = theme === 'dark' ? <MdDarkMode className='w-8 h-8 stroke-current dark:text-white' /> : <WiDaySunny className='w-8 h-8 stroke-current dark:text-white' />;
+  const icon = theme === 'dark' ? <MdDarkMode className='w-8 h-8 stroke-current dark:text-white' /> : <WiDaySunny className='w-8 h-8 stroke-current' />;
 
   const links = [
     { to: 'home', icon: <FaHome className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Home' },
@@ -66,34 +66,37 @@ const App = () => {
         </div>
       )}
 
-      <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto dark:bg-darkPurple`}>
-        <div className="flex flex-col items-center">
-          <div id="home" className="section">
+      <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto w-full dark:bg-darkPurple`}>
+        <div className="flex flex-col items-center ">
+          <div id="home" className="">
             <Welcome />
           </div>
-          <div id="aboutme" className="section">
+          <div id="aboutme" className="px-2">
             <AboutMe />
           </div>
-          <div id="estudios" className="section">
+          <div id="estudios" className="">
             <Estudio />
           </div>
-          <div id="portafolio" className="section">
+          <div id="portafolio" className="container">
             <TechnologiesPage />
           </div>
-          <div id="correo" className="section">
+          <div id="correo" className="mb-10">
             <Portafolio />
           </div>
         </div>
         {isMobile && (
           <div className="fixed bottom-0 left-0 w-full bg-lightPurple dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md">
-            <div className="flex justify-center p-2 space-x-6">
-              <a href="#" onClick={toggleTheme} className=''>
+            <div className="flex justify-center p-2 space-x-6 items-center">
+              <div
+                className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer"
+                onClick={toggleTheme}
+              >
                 {icon}
-              </a>
+              </div>
               {links.map((link, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer"
+                  className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer"
                   onClick={() => scrollToElement(link.to)}
                 >
                   {link.icon}
@@ -102,6 +105,7 @@ const App = () => {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

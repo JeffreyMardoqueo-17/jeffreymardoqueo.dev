@@ -9,6 +9,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiMicrosoftsqlserver } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 import { SiAzuredevops } from "react-icons/si";
 import React, { useState } from 'react';
 
@@ -39,10 +40,11 @@ const TechnologiesPage = () => {
     const technologies = [
         { name: 'GitHub', icon: <FaGithub className="bg-black text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
         { name: 'AzureDevOps', icon: <SiAzuredevops className="bg-blue-800 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
+        { name: 'Git', icon: <FaGitAlt className="bg-orange-600 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
     ];
 
     return (
-        <div className="container mx-auto p-4 dark:bg-slate-950 dark:bg-opacity-50 backdrop-filter backdrop-blur-md mb-6 w-full">
+        <div className=" dark:bg-slate-950 dark:bg-opacity-50 backdrop-filter backdrop-blur-md mb-6 w-full">
             <div className="w-full mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6">
                 <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Frontend</h2>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
