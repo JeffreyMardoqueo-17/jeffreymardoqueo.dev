@@ -12,8 +12,6 @@ import { MdClass } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 import { TbNut } from "react-icons/tb";
 import { RiSuitcaseFill } from "react-icons/ri";
-import { HiBriefcase } from "react-icons/hi2";
-// import { scrollToElement } from './scrollSmooth'; // Importa la función
 import { scrollToElement } from './funcions/scrollToElement';
 
 const App = () => {
@@ -38,11 +36,11 @@ const App = () => {
   const icon = theme === 'dark' ? <MdDarkMode className='w-8 h-8 stroke-current dark:text-white' /> : <WiDaySunny className='w-8 h-8 stroke-current' />;
 
   const links = [
-    { to: 'home', icon: <FaHome className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Home' },
-    { to: 'aboutme', icon: <FaUser className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'About Me' },
-    { to: 'estudios', icon: <MdClass className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Estudios' },
-    { to: 'portafolio', icon: <TbNut className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Proyectos' },
-    { to: 'correo', icon: <RiSuitcaseFill className='w-8 h-8 stroke-current dark:text-white' />, tooltip: 'Correo' }
+    { to: 'home', icon: <FaHome className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Home' },
+    { to: 'aboutme', icon: <FaUser className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'About Me' },
+    { to: 'estudios', icon: <MdClass className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Estudios' },
+    { to: 'portafolio', icon: <TbNut className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Proyectos' },
+    { to: 'correo', icon: <RiSuitcaseFill className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Correo' }
   ];
 
   return (
@@ -87,10 +85,10 @@ const App = () => {
           </div>
         </div>
         {isMobile && (
-          <div className="fixed bottom-0 left-0 w-full bg-lightPurple dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md">
+          <div className="fixed bottom-0 left-0 w-full bg-slate-50 dark:bg-gray-900 dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-50 bg-opacity-50 backdrop-filter backdrop-blur-sm">
             <div className="flex justify-center p-2 space-x-6 items-center">
               <div
-                className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer"
+                className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer hover:text-white"
                 onClick={toggleTheme}
               >
                 {icon}
@@ -98,7 +96,7 @@ const App = () => {
               {links.map((link, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer"
+                  className="flex items-center justify-center w-12 h-12 rounded hover:bg-darkPurple dark:hover:bg-hoverBG cursor-pointer hover:text-white "
                   onClick={() => scrollToElement(link.to)}
                 >
                   {link.icon}

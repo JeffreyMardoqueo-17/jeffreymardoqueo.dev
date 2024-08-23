@@ -1,0 +1,13 @@
+/* CSS */
+.dark .gradient-overlay::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to top, #0B050E, transparent);
+    pointer-events: none;
+    z-index: 10;
+    /* Esto asegura que el gradiente no interfiera con los eventos de la imagen */
+}
