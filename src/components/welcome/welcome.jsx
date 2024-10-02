@@ -18,7 +18,7 @@ const Welcome = () => {
                         </p>
                         <div className="flex gap-4 mt-10">
                             <a
-                                href="/Document/Jeffrey_Mardoqueo_CV.pdf"
+                                href="/Document/CVJeffreyMardoqueo_Frontend.pdf"
                                 download
                                 className="flex items-center gap-2 bg-darkPurple dark:bg-hoverBG text-white font-bold py-2 px-4 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-black visited:bg-darkPurple visited:bg-hoverBG select-none"
                             >

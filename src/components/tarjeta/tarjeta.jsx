@@ -3,7 +3,7 @@ import { FaLink } from "react-icons/fa6";
 
 const Tarjeta = ({ imagen, nombre, descripcion, tecnologias, link }) => {
     return (
-        <div className="border dark:border-slate-600 rounded-lg overflow-hidden shadow-md dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md max-w-[80%] min-h-[400px] mx-auto flex flex-col">
+        <div className="border dark:border-slate-600 rounded-lg overflow-hidden shadow-md dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md max-w-[8 0%] min-h-[400px] mx-auto flex flex-col">
             <img src={imagen} alt={nombre} className="w-full h-[50%] object-cover" />
             <div className="p-4 flex flex-col flex-grow">
                 <div className="flex justify-between items-center mb-2">
