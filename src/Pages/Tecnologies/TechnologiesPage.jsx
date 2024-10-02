@@ -11,6 +11,8 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiAzuredevops } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 import React, { useState } from 'react';
 
 const TechnologiesPage = () => {
@@ -29,6 +31,9 @@ const TechnologiesPage = () => {
         { name: 'CSS', icon: <FaCss3Alt className="text-blue-600 w-16 h-16 md:w-24 md:h-24" /> },
         { name: 'Bootstrap', icon: <FaBootstrap className="text-purple-800 w-16 h-16 md:w-24 md:h-24" /> },
         { name: 'C Sharp', icon: <SiCsharp className="text-purple-700 w-16 h-16 md:w-24 md:h-24" /> },
+        { name: "NextJs", icon: <RiNextjsFill className="text-gray-900 dark:text-gray-600 w-16 h-16 md:w-24 md:h-24" /> },
+        { name: 'TypeScript', icon: <SiTypescript className="text-blue-600 w-16 h-16 md:w-24 md:h-24" /> },
+
     ];
 
     const backend = [
