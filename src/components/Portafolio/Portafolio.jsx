@@ -39,16 +39,21 @@ const proyectos = [
 
 const desarrollo = [
     {
-        "nombre": "AgendameSV",
-        "descripcion": "AGENDAMESV es una aplicación innovadora diseñada para conectar microempresas y profesionales independientes con usuarios que buscan servicios a domicilio o en el local del proveedor. Esta plataforma facilita la programación de citas y la gestión de servicios en sectores como estilistas, maestros, técnicos, entre otros.",
+        "nombre": "Busca Fácil",
+        "descripcion": "\"Busca Fácil\" es una plataforma pensada a nivel nacional para conectar a clientes y proveedores de servicios, optimizando el tiempo y mejorando la experiencia de agendamiento y compra. El proyecto incluye un sistema de citas que permite a los usuarios reservar servicios como masajes, reparaciones, y más, sin necesidad de desplazarse. Además, cuenta con un marketplace donde los usuarios pueden comprar y vender productos, y una sección de cotizaciones que permite a los clientes solicitar precios de productos o servicios sin necesidad de visitar los locales físicos.",
         "tecnologias": [
-            ".NET MAUI",
-            "BLAZOR",
+            "Next.js",
             "Tailwind CSS",
-            "SQL Server",
-            "Entity Framework"
+            "TypeScript",
+            "Nest.js",
+            "MySQL"
         ],
-        imagen: '../../../public/imgs/BackendREAL.jpg'
+        "imagen": "../../../imgs/BackendREAL.jpg",
+        "funcionalidades": [
+            "Agendamiento de citas: Los usuarios pueden reservar servicios que los locales ofrecen.",
+            "Marketplace: Espacio para la compra y venta de productos entre usuarios.",
+            "Sistema de cotizaciones: Los usuarios pueden cotizar productos o servicios directamente en la plataforma, sin necesidad de acudir a los locales físicos, recibiendo precios y detalles de manera digital."
+        ]
     },
     {
         "nombre": "Landing Page Digital Work",
