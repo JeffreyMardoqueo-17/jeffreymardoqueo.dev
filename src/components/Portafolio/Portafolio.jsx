@@ -35,6 +35,17 @@ const proyectos = [
         imagen: '../../../imgs/recetas.png',
         link: 'https://jeffreymardoqueo-17.github.io/Recetario-Practica/'
     },
+    {
+        "nombre": "Ejercicio de frontend, pagina de musica KodigoMusic",
+        "descripcion": "Ejercicio para practicar fornted, enlistado de musicas, busqueda de musicas, filtracion, reproduccion, responsive .",
+        "tecnologias": [
+            "Nextjs",
+            "Typescript",
+            "Tailwindcss"
+        ],
+        imagen: '../../../imgs/recetas.png',
+        link: 'https://jeffreymardoqueo-17.github.io/Recetario-Practica/'
+    },
 ];
 
 const desarrollo = [
