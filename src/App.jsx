@@ -71,10 +71,7 @@ const App = () => {
           <div id="home" className="">
             <Welcome />
           </div>
-          <div id="aboutme" className="px-2">
-            <AboutMe />
-          </div>
-          <div id="estudios" className="">
+          <div id="estudios" className="mt-6">
             <Estudio />
           </div>
           <div id="portafolio" className="container">
@@ -82,6 +79,9 @@ const App = () => {
           </div>
           <div id="correo" className="mb-10">
             <Portafolio />
+          </div>
+          <div id="aboutme" className="px-2">
+            <AboutMe />
           </div>
         </div>
         {isMobile && (

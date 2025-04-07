@@ -4,12 +4,12 @@ const educacionSuperior = [
     {
         Time: 'ESFE/AGAPE 2023-2024',
         Titulo: 'Técnico En Ingeniería de Desarrollo de Software',
-        Descripcion: 'Diseñar, desarrollar y mantener software, asegurando su correcto funcionamiento y adaptándolo a las necesidades de los usuarios'
+        Descripcion: 'Programación .NET - Bases de datos - Desarrollo web - APIs RESTful - Control de versiones - Metodologías ágiles - Diseñar, desarrollar y mantener software, asegurando su correcto funcionamiento y adaptándolo a las necesidades de los usuarios'
     },
     {
-        Time: 'Kodigo 2024 - 2025 (Proceso)',
+        Time: 'Kodigo 2024 - 2025',
         Titulo: 'Desarrollador Full Stack Junior',
-        Descripcion: 'Crear aplicacione web, usando React, TypeScript en la pare del frontend y PHP con laravel en el Backend y utilizacion'
+        Descripcion: 'Desarrollo de aplicaciones web · TypeScript· React · PHP · Laravel · MySQL · Metodología ágil Scrum · Trabajo en equipo '
     }
 ];
 
@@ -17,12 +17,12 @@ const otros = [
     {
         Time: 'TPC Sonsonate, 2022',
         Titulo: 'Analista programador de Sistemas',
-        Descripcion: 'Planificación y seguimiento de los proyectos. Análisis de requisitos y gestión de la documentación técnica. Realización de tareas de desarrollo software.'
+        Descripcion: 'Desarrollo de sistemas · Análisis de sistemas · Lógica de programación · Implementación · Mantenimiento de software.'
     },
     {
-        Time: 'TPC Sonsonate, 2022',
-        Titulo: 'Analista programador de Sistemas',
-        Descripcion: 'Planificación y seguimiento de los proyectos. Análisis de requisitos y gestión de la documentación técnica. Realización de tareas de desarrollo software.'
+        Time: 'TPC Sonsonate, 2021',
+        Titulo: 'Técnico Operador en Windows',
+        Descripcion: 'Administración de sistemas Windows · Manejo avanzado de Office '
     },
     {
         Time: 'Udemy, 2024',

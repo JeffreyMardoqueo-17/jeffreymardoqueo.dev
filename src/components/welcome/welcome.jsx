@@ -14,7 +14,7 @@ const Welcome = () => {
                             <br className="block sm:hidden" /> <span className='text-hoverBG'>Jeffrey </span>
                         </h2>
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8 mb-10">
-                            Frontend developer con experiencia en el desarrollo de aplicaciones web. <span className='text-hoverBG font-semibold'>Estudiante de Tecnico en Ingieneria de Desarrollo de Software</span>
+                            Desarrollador de sofware con experiencia en el desarrollo de aplicaciones web. <span className='text-hoverBG font-semibold'>Tecnico en Ingieneria de Desarrollo de Software</span>
                         </p>
                         <div className="flex gap-4 mt-10">
                             <a

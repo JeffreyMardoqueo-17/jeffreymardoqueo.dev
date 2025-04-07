@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './AboutMe.css';
-
 const aboutMeData = {
-    description: "Actualmente soy un estudiante con grandes ambiciones de crecer en el ámbito del Desarrollo de software. Tengo 18 años y siempre busco estar aprendiendo cosas nuevas y esforzándome por lo que quiero.",
-    qualities: "Perseverante, detallista y proactivo. Me esfuerzo por mantenerme actualizado con las últimas tecnologías y mejores prácticas en el desarrollo de software.",
-
-    additionalInfo: "Aquí puedes ver más adelante parte de mis conocimientos. ¡CONTINÚA VIENDO MI PORTAFOLIO!"
+    description: "Soy un desarrollador de software especializado en .NET, con experiencia en desarrollo full-stack utilizando MVC y arquitectura en N-capas. Estoy buscando mi primer trabajo en el área y tengo muchas ganas de crecer y aportar. Me gusta liderar, guiar y colaborar en proyectos donde pueda compartir mis ideas, aprender de los demás y siempre buscar la mejor solución de manera humilde.",
+    qualities: "Creo en el trabajo en equipo y en la importancia de aprender tanto de mis compañeros como de mis errores. Me enfoco en crecer como profesional mientras mantengo una actitud abierta y respetuosa hacia todos los desafíos.",
+    // additionalInfo: "Te invito a explorar mi portafolio para conocer más sobre mis proyectos. ¡Estoy listo para empezar esta nueva etapa y seguir aprendiendo!"
 };
+
 
 const AboutMe = () => {
     const [darkMode, setDarkMode] = useState(false);
