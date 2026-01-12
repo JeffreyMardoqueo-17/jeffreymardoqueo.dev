@@ -1,50 +1,97 @@
-import React, { useState } from 'react';
-import './AboutMe.css';
+import React, { useState, useEffect } from "react";
+import "./AboutMe.css";
+
 const aboutMeData = {
-    description: "Soy un desarrollador de software especializado en .NET, con experiencia en desarrollo full-stack utilizando MVC y arquitectura en N-capas. Estoy buscando mi primer trabajo en el área y tengo muchas ganas de crecer y aportar. Me gusta liderar, guiar y colaborar en proyectos donde pueda compartir mis ideas, aprender de los demás y siempre buscar la mejor solución de manera humilde.",
-    qualities: "Creo en el trabajo en equipo y en la importancia de aprender tanto de mis compañeros como de mis errores. Me enfoco en crecer como profesional mientras mantengo una actitud abierta y respetuosa hacia todos los desafíos.",
-    // additionalInfo: "Te invito a explorar mi portafolio para conocer más sobre mis proyectos. ¡Estoy listo para empezar esta nueva etapa y seguir aprendiendo!"
+  description: `Soy desarrollador de software especializado en .NET, con interés en construir soluciones serias, estables y útiles, especialmente en contextos donde la responsabilidad y la toma de decisiones importan. Me muevo mejor en entornos donde el orden, la disciplina y el pensamiento lógico son clave.
+
+Vengo de experiencias tanto técnicas como no técnicas, lo que me dio criterio práctico, adaptabilidad y una forma responsable de enfrentar problemas. No me interesa hacer software “bonito por fuera”; me importa que funcione, que sea confiable y que tenga sentido en la vida real.
+
+Soy Adventista del Séptimo Día. Mi fe define mi forma de vivir y trabajar: integridad, autodisciplina y coherencia entre lo que digo y lo que hago.
+
+Me gusta escalar montañas. Ahí aprendí paciencia, control emocional y respeto por el proceso: avanzar paso a paso, evaluando riesgos y entendiendo que los errores pequeños, repetidos, siempre terminan cobrando factura.`,
+  qualities: `Responsable, colaborativo y comunicativo. Trabajo bien en equipo, mantengo una actitud cercana y respetuosa, y asumo los errores como parte del aprendizaje y la mejora continua.`,
 };
 
+const images = [
+  "/imgs/yo.jpeg",
+  "/imgs/club.jpeg",
+  "/imgs/documentando.jpeg",
+
+  "/imgs/nubes.jpeg",
+];
 
 const AboutMe = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const [current, setCurrent] = useState(0);
 
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    };
+  const nextImage = () => setCurrent((prev) => (prev + 1) % images.length);
 
-    return (
-        <div id="aboutme" className={`leading-normal mt-2 tracking-wider min-h-0 flex items-center justify-center py-6`}>
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-auto gap-4 rounded-lg">
-                {/* Imagen principal y fondo ocultos en móvil */}
-                <div className="hidden w-full lg:block">
-                    <img src="/imgs/peer.png" className="rounded-lg mx-auto" alt="Imagen de perfil" />
-                </div>
-                <div className="hidden w-full lg:hidden gradient-overlay rounded-full mx-auto h-32 w-32 bg-cover bg-center" style={{ backgroundImage: "url('/imgs/peer.png')" }}>
-                </div>
+  const prevImage = () =>
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
 
-                <div className="w-full lg:col-span-1 rounded-lg opacity-75">
-                    <div className="text-center lg:text-left p-2">
-                        <h2 className="text-3xl font-bold leading-tight dark:text-white text-black sm:text-4xl lg:text-5xl">Sobre
-                            <br className="block sm:hidden" /> <span className=' text-hoverBG'>Mi </span>
-                        </h2>
-                        <p className="mt-4 text-gray-900 dark:text-gray-100 text-justify">
-                            {aboutMeData.description}
-                        </p>
-                        <p className="mt-4 dark:text-gray-100 text-justify">
-                            <strong className='dark:text-white'>Calidades:</strong> {aboutMeData.qualities}
-                        </p>
-                        <p className="mt-4 text-justify">
-                        </p>
-                        <p className="mt-4 dark:text-gray-100 text-justify text-redPasion font-bold">
-                            {aboutMeData.additionalInfo}
-                        </p>
-                    </div>
-                </div>
-            </div>
+  // 🔁 Autoplay cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000);
+
+    return () => clearInterval(interval); // limpieza correcta
+  }, []);
+
+  return (
+    <section
+      id="aboutme"
+      className="min-h-screen flex items-center justify-center tracking-wider px-4"
+    >
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+        {/* Carrusel */}
+        <div className="relative w-full flex justify-center mb-8 lg:mb-0">
+          <img
+            src={images[current]}
+            alt="Imagen personal"
+            className="
+              rounded-lg
+              object-cover
+              w-40 h-40
+              sm:w-52 sm:h-52
+              lg:w-96 lg:h-auto
+              transition-all duration-300
+            "
+          />
+
+          {/* Controles manuales */}
+          <button
+            onClick={prevImage}
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
+          >
+            ‹
+          </button>
+
+          <button
+            onClick={nextImage}
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
+          >
+            ›
+          </button>
         </div>
-    );
+
+        {/* Texto */}
+        <div className="w-full opacity-90 ">
+          <h2 className="text-3xl font-bold dark:text-white text-black sm:text-4xl lg:text-5xl text-center lg:text-left">
+            Sobre <span className="text-hoverBG">Mi</span>
+          </h2>
+
+          <p className="mt-6 text-gray-900 dark:text-gray-100 text-justify">
+            {aboutMeData.description}
+          </p>
+
+          <p className="mt-6 dark:text-gray-100 text-justify">
+            <strong className="dark:text-white">Calidades:</strong>{" "}
+            {aboutMeData.qualities}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default AboutMe;

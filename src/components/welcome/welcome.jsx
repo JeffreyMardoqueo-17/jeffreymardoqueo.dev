@@ -8,52 +8,97 @@ const Welcome = () => {
     <section
       id="home"
       className="
-    min-h-screen
-    flex
-    items-center
-    dark:bg-darkPurple
-    bg-lightPurple
-    overflow-hidden
-    container
-  "
+        min-h-screen
+        flex
+        items-center
+        dark:bg-darkPurple
+        bg-lightPurple
+        overflow-hidden
+      "
     >
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 select-none">
-          <div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-12 select-none">
+          {/* TEXTO */}
+          <div className="text-center md:text-left">
             <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">
-              Hey 👋 soy
-              <br className="block sm:hidden" />{" "}
-              <span className="text-hoverBG">Jeffrey </span>
+              Hey 👋 soy{" "}
+              <span className="text-hoverBG block sm:inline">Jeffrey</span>
             </h2>
-            <p className="max-w-lg mt-3 text-xl leading-relaxed text-darkPurple dark:text-lightPurple md:mt-8 mb-10">
-              Desarrollador de sofware con experiencia en el desarrollo de
-              aplicaciones web.{" "}
-              <span className="text-hoverBG font-semibold">
-                Tecnico en Ingieneria de Desarrollo de Software
+
+            <p className="max-w-lg mx-auto md:mx-0 mt-4 text-lg sm:text-xl leading-relaxed text-darkPurple dark:text-lightPurple">
+              Desarrollador de software con experiencia en aplicaciones web.{" "}
+              <span className="text-hoverBG font-semibold block sm:inline">
+                Técnico en Ingeniería de Desarrollo de Software
               </span>
             </p>
-            <div className="flex gap-4 mt-10">
+
+            {/* BOTONES */}
+            <div
+              className="
+              flex
+              flex-col
+              sm:flex-row
+              gap-4
+              mt-8
+              items-center
+              sm:items-start
+              justify-center
+              md:justify-start
+            "
+            >
               <a
-                href="/Document/CV Jeffrey Mardoqueo Jimenez Santos _ Portaafolio.pdf"
+                href="/Document/Jeffrey Marodoqueo CV 2026 QR.pdf"
                 download
-                className="flex items-center gap-2 bg-darkPurple dark:bg-hoverBG text-white font-bold py-2 px-4 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-black visited:bg-darkPurple visited:bg-hoverBG select-none"
+                className="
+                  w-full sm:w-auto
+                  flex items-center justify-center gap-2
+                  bg-darkPurple dark:bg-hoverBG
+                  text-white font-bold
+                  py-3 px-6
+                  rounded-3xl
+                  shadow-lg
+                  transition-transform
+                  hover:scale-105
+                "
               >
                 <FiDownload size={20} /> Descargar CV
               </a>
+
               <a
                 href="https://github.com/JeffreyMardoqueo-17"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gray-800 dark:bg-gray-700 text-white font-semibold py-2 px-4 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-600"
+                className="
+                  w-full sm:w-auto
+                  flex items-center justify-center gap-2
+                  bg-gray-800 dark:bg-gray-700
+                  text-white font-semibold
+                  py-3 px-6
+                  rounded-3xl
+                  shadow-lg
+                  transition-transform
+                  hover:scale-105
+                "
               >
                 <FaGithub size={20} />
                 GitHub
               </a>
+
               <a
                 href="https://www.linkedin.com/in/jeffrey-mardoqueo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-blue-700 dark:bg-blue-600 text-white font-semibold py-2 px-4 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-800"
+                className="
+                  w-full sm:w-auto
+                  flex items-center justify-center gap-2
+                  bg-blue-700 dark:bg-blue-600
+                  text-white font-semibold
+                  py-3 px-6
+                  rounded-3xl
+                  shadow-lg
+                  transition-transform
+                  hover:scale-105
+                "
               >
                 <FaLinkedin size={20} />
                 LinkedIn
@@ -61,26 +106,24 @@ const Welcome = () => {
             </div>
           </div>
 
-          <div className="relative mt-9 gradient-overlay">
+          {/* IMAGEN */}
+          <div className="relative flex justify-center mt-10 md:mt-0">
             <img
               src="/imgs/mia.jpeg"
               alt="Jeffrey Mardoqueo"
               className="
-                relative
-                w-auto h-80
-                mx-auto
-                object-cover
-                rounded-full
-                shadow-lg
-                shadow-gray-300/60
-                dark:shadow-2xl
-                dark:shadow-black/70
-                ring-4
-                ring-white
-                dark:ring-hoverBG
-                transition-all
-                duration-300
-            "
+    w-40 h-40
+    sm:w-52 sm:h-52
+    lg:w-72 lg:h-72
+    object-cover
+    rounded-full
+    shadow-lg
+    ring-4
+    border-10
+    ring-azul
+    dark:ring-red-500
+    transition-all
+  "
             />
           </div>
         </div>

@@ -13,6 +13,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiAzuredevops } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import {SiDocker} from "react-icons/si";
 import React, { useState } from 'react';
 
 const TechnologiesPage = () => {
@@ -46,6 +47,7 @@ const TechnologiesPage = () => {
         { name: 'GitHub', icon: <FaGithub className="bg-black text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
         { name: 'AzureDevOps', icon: <SiAzuredevops className="bg-blue-800 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
         { name: 'Git', icon: <FaGitAlt className="bg-orange-600 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
+        { name: 'Docker', icon: <SiDocker className="bg-blue-600 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
     ];
 
     return (

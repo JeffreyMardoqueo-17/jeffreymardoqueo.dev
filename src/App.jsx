@@ -39,8 +39,8 @@ const App = () => {
     { to: 'home', icon: <FaHome className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Home' },
     { to: 'aboutme', icon: <FaUser className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'About Me' },
     { to: 'estudios', icon: <MdClass className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Estudios' },
-    { to: 'portafolio', icon: <TbNut className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Proyectos' },
-    { to: 'correo', icon: <RiSuitcaseFill className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Correo' }
+    { to: 'tecnologias', icon: <TbNut className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'tecnologias' },
+    { to: 'portafolio', icon: <RiSuitcaseFill className='w-8 h-8 stroke-current dark:text-white hover:text-white' />, tooltip: 'Portafolio' }
   ];
 
   return (
@@ -71,10 +71,10 @@ const App = () => {
           <div id="home" className="h-screen ">
             <Welcome />
           </div>
-          <div id="correo" className="mb-10">
+          <div id="portafolio" className="mb-10">
             <Portafolio />
           </div>
-          <div id="portafolio" className="container">
+          <div id="tecnologias" className="container">
             <TechnologiesPage />
           </div>
           <div id="estudios" className="mt-6">
