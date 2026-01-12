@@ -68,17 +68,17 @@ const App = () => {
 
       <div className={`flex-1 ${!isMobile ? 'ml-20' : ''} h-screen overflow-y-auto w-full dark:bg-darkPurple`}>
         <div className="flex flex-col items-center ">
-          <div id="home" className="">
+          <div id="home" className="h-screen ">
             <Welcome />
           </div>
-          <div id="estudios" className="mt-6">
-            <Estudio />
+          <div id="correo" className="mb-10">
+            <Portafolio />
           </div>
           <div id="portafolio" className="container">
             <TechnologiesPage />
           </div>
-          <div id="correo" className="mb-10">
-            <Portafolio />
+          <div id="estudios" className="mt-6">
+            <Estudio />
           </div>
           <div id="aboutme" className="px-2">
             <AboutMe />
