@@ -57,6 +57,14 @@ const proyectos = [
     imagen: "../../../imgs/kodigopage.png",
     link: "https://kodigo-register.vercel.app/",
   },
+    {
+    nombre: "Task - Gestor de tareas",
+    descripcion:
+      "Un proyecto pensado para el control de tareas en equipo, enfocado al ambito estudiantil, para que los aestros tengan un mejor control de los proyectos y lograr que los alumnos trabajen en equipo por igual .",
+    tecnologias: ["C·,NET", "Tailwindcss", "Entity Framework", "SQL Server"],
+    imagen: "../../../imgs/Tarea.png",
+    link: "",
+  },
   {
     nombre: "School Fees API - EN DESARROLLO",
    descripcion:
