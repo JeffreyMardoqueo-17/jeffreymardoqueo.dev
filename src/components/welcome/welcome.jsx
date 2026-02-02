@@ -47,7 +47,7 @@ const Welcome = () => {
             "
             >
               <a
-                href="/Document/Jeffrey Marodoqueo CV 2026 QR.pdf"
+                href="/Document/Jeffrey Marodoqueo_CV 2026.pdf"
                 download
                 className="
                   w-full sm:w-auto
