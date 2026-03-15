@@ -3,12 +3,12 @@ import Tarjeta from "../tarjeta/tarjeta";
 
 // Array de proyectos
 const proyectos = [
-  
-   {
+
+  {
     nombre: "Clynic - Sistema de control de citas para clinicas",
     descripcion:
       "Clynic System, una plataforma para la operacion de clinicas privadas. Este proyecto cubre la experiencia publica de captacion y agendamiento, el acceso autenticado del personal y los paneles operativos para administracion, recepcion y doctores.",
-    tecnologias: ["NextJs", "Typescript", "Tailwindcss", "shadcn", "SQL server", "Entity Framework", "C#", ".NET" , "Docker y docker compose"],
+    tecnologias: ["NextJs", "Typescript", "Tailwindcss", "shadcn", "SQL server", "Entity Framework", "C#", ".NET", "Docker y docker compose"],
     imagenes: [
       "../../../imgs/Clynic/Dashboard_resepcion.png",
       "../../../imgs/Clynic/Dashboard_Adminstracion.png",
@@ -17,27 +17,29 @@ const proyectos = [
       "../../../imgs/Clynic/Panel_doctor.png",
       "../../../imgs/Clynic/Vistas_Sucursales.png",
       "../../../imgs/Clynic/Vista_appointment.png",
-     ],
-    
+    ],
+
     link: "https://clynic-sys.vercel.app/",
   },
   {
     nombre: "Galaxium - Control de inventario y ventas",
     descripcion:
       "Este proyecto es un sistema ERP de inventario diseñado para gestionar de forma centralizada las entradas y salidas de productos en un negocio. Permite controlar el stock en tiempo real, registrar compras/ingresos de mercancía, ventas o despachos, y llevar trazabilidad de movimientos para tomar mejores decisiones. Además, integra módulos clave como productos, categorías, clientes, ventas, métodos de pago y dashboard, facilitando la operación diaria y reduciendo errores en el control del inventario.",
-    tecnologias: ["NextJs", "Typescript", "Tailwindcss", "shadcn", "SQL server", "Entity Framework", "C#", ".NET" ],
+    tecnologias: ["NextJs", "Typescript", "Tailwindcss", "shadcn", "SQL server", "Entity Framework", "C#", ".NET"],
     imagenes: [
-      "../../../imgs/Galaxium/dashboard.png",
+      "../../../imgs/Galaxium/Dashboard.png",
+      "../../../imgs/Galaxium/venta.png",
       "../../../imgs/Galaxium/cliente.png",
-      "../../../imgs/Galaxium/NewProducts.png",
-      "../../../imgs/Galaxium/NewStock.png",
-      "../../../imgs/Galaxium/Scaner.png",
-      "../../../imgs/Galaxium/Venta.png",
-     ],
-    
+      "../../../imgs/Galaxium/addProducts.png",
+      "../../../imgs/Galaxium/products.png",
+      "../../../imgs/Galaxium/scaner.png",
+      "../../../imgs/Galaxium/stockEntry.png",
+      "../../../imgs/Galaxium/histosy.png",
+    ],
+
     link: "https://clynic-sys.vercel.app/",
   },
- 
+
   {
     nombre: "Sistema de Control de Pagos - Frontend",
     descripcion:
@@ -58,7 +60,7 @@ const proyectos = [
     nombre: "Sistema de Control de Pagos - Backend",
     descripcion:
       "API RESTful del Sistema de Control de Pagos, desarrollada con Node.js, Express y SQL Server para administrar datos de pagos de manera eficiente.",
-    tecnologias: ["Node.js", "Express", "PostgreSQL", ],
+    tecnologias: ["Node.js", "Express", "PostgreSQL",],
     imagenes: [
       "../../../imgs/BackendREAL.jpg"
     ],
@@ -71,7 +73,7 @@ const proyectos = [
     imagenes: ["../../../imgs/kodigomiusic.png"],
     link: "https://kodigo-music-rho.vercel.app/",
   },
-  
+
   {
     nombre: "Consumo de Api atmo-weather",
     descripcion:
@@ -128,7 +130,7 @@ const Portafolio = () => {
         Proyectos
       </h2>
 
-    
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {proyectos.map((proyecto, index) => (
           <Tarjeta
