@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./AboutMe.css";
 
 const aboutMeData = {
-  description: `Soy desarrollador de software especializado en .NET, con interés en construir soluciones serias, estables y útiles, especialmente en contextos donde la responsabilidad y la toma de decisiones importan. Me muevo mejor en entornos donde el orden, la disciplina y el pensamiento lógico son clave.
+  description: `Soy Desarrollador de Software con experiencia en C# y .NET, especialmente en ASP.NET Web API y ASP.NET MVC, enfocado en el desarrollo de APIs REST y soluciones backend robustas, mantenibles y orientadas a negocio.
 
-Vengo de experiencias tanto técnicas como no técnicas, lo que me dio criterio práctico, adaptabilidad y una forma responsable de enfrentar problemas. No me interesa hacer software “bonito por fuera”; me importa que funcione, que sea confiable y que tenga sentido en la vida real.
+He trabajado en entornos full stack participando en el desarrollo e integracion de aplicaciones web con React, aportando tambien conocimientos en JavaScript, TypeScript, Node.js y Express para construir soluciones de extremo a extremo.
 
-Soy Adventista del Séptimo Día. Mi fe define mi forma de vivir y trabajar: integridad, autodisciplina y coherencia entre lo que digo y lo que hago.
+Tengo experiencia en bases de datos SQL, principalmente SQL Server, fundamentos de NoSQL e integracion y consumo de APIs REST. Ademas, he trabajado en pruebas unitarias y E2E con xUnit, validacion de endpoints con Postman y analisis de logica de negocio para asegurar calidad funcional y tecnica.
 
-Me gusta escalar montañas. Ahí aprendí paciencia, control emocional y respeto por el proceso: avanzar paso a paso, evaluando riesgos y entendiendo que los errores pequeños, repetidos, siempre terminan cobrando factura.`,
-  qualities: `Responsable, colaborativo y comunicativo. Trabajo bien en equipo, mantengo una actitud cercana y respetuosa, y asumo los errores como parte del aprendizaje y la mejora continua.`,
+Aplico principios SOLID, arquitectura en N-Capas, Clean Architecture y patrones de diseño para construir software escalable. Complemento mi trabajo con Docker y Docker Compose, procesos basicos de CI/CD y metodologias agiles (Scrum) usando Azure DevOps y Git.
+
+Tambien cuento con conocimientos en desarrollo cross-platform con .NET MAUI y Blazor, y fundamentos en React Native para aplicaciones moviles. Me caracterizo por mi adaptacion tecnologica, enfoque en resultados y capacidad de trabajo en equipo.`,
+  qualities: `Perfil profesional orientado al desarrollo e integracion de aplicaciones web y servicios backend, con pensamiento analitico, comunicacion efectiva y compromiso con la mejora continua.`,
 };
 
 const images = [
@@ -77,7 +79,7 @@ const AboutMe = () => {
         {/* Texto */}
         <div className="w-full opacity-90 ">
           <h2 className="text-3xl font-bold dark:text-white text-black sm:text-4xl lg:text-5xl text-center lg:text-left">
-            Sobre <span className="text-hoverBG">Mi</span>
+            Sobre <span className="text-hoverBG">Mi Perfil</span>
           </h2>
 
           <p className="mt-6 text-gray-900 dark:text-gray-100 text-justify">
