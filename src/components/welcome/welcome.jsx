@@ -20,10 +20,10 @@ const Welcome = () => {
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-12 select-none">
           {/* TEXTO */}
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">
+            <h1 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">
               Hey 👋 soy{" "}
               <span className="text-hoverBG block sm:inline">Jeffrey</span>
-            </h2>
+            </h1>
 
             <p className="max-w-lg mx-auto md:mx-0 mt-4 text-lg sm:text-xl leading-relaxed text-darkPurple dark:text-lightPurple">
               Desarrollador de software con experiencia en aplicaciones web.{" "}
@@ -110,7 +110,9 @@ const Welcome = () => {
           <div className="relative flex justify-center mt-10 md:mt-0">
             <img
               src="/imgs/mia.jpeg"
-              alt="Jeffrey Mardoqueo"
+              alt="Retrato de Jeffrey Mardoqueo"
+              loading="eager"
+              decoding="async"
               className="
     w-40 h-40
     sm:w-52 sm:h-52

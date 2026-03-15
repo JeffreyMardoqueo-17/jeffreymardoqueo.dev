@@ -38,16 +38,17 @@ const otros = [
 
 const Estudio = () => {
   return (
-    <div
+    <section
       id="estudios"
       className="container mx-auto min-h-screen flex items-center"
+      aria-labelledby="estudios-title"
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 select-none">
         {/* Educación Superior */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-3xl font-bold mb-12 text-redPasion text-center lg:text-left">
+          <h2 id="estudios-title" className="text-3xl font-bold mb-12 text-redPasion text-center lg:text-left">
             Educación Superior
-          </h1>
+          </h2>
 
           <ol className="relative border-s ml-6 border-hoverBG space-y-12">
             {educacionSuperior.map((edu, index) => (
@@ -72,9 +73,9 @@ const Estudio = () => {
 
         {/* Otros */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-3xl font-bold mb-12 text-redPasion text-center lg:text-left">
+          <h3 className="text-3xl font-bold mb-12 text-redPasion text-center lg:text-left">
             Otros
-          </h1>
+          </h3>
 
           <ol className="relative border-s ml-6 border-hoverBG space-y-12">
             {otros.map((otro, index) => (
@@ -97,7 +98,7 @@ const Estudio = () => {
           </ol>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

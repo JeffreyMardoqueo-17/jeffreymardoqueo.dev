@@ -13,6 +13,8 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiAzuredevops } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GrTest } from "react-icons/gr";
 import {SiDocker} from "react-icons/si";
 import React, { useState } from 'react';
 
@@ -41,6 +43,7 @@ const TechnologiesPage = () => {
         { name: 'Node JS', icon: <FaNode className="text-green-600 w-16 h-16 md:w-24 md:h-24" /> },
         { name: 'SQL Server', icon: <SiMicrosoftsqlserver className="text-red-600 w-16 h-16 md:w-24 md:h-24" /> },
         { name: 'C Sharp', icon: <SiCsharp className="text-purple-700 w-16 h-16 md:w-24 md:h-24" /> },
+        { name: 'PostgreSQL', icon: <BiLogoPostgresql className="text-blue-600 w-16 h-16 md:w-24 md:h-24" /> }
     ];
 
     const technologies = [
@@ -48,12 +51,14 @@ const TechnologiesPage = () => {
         { name: 'AzureDevOps', icon: <SiAzuredevops className="bg-blue-800 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
         { name: 'Git', icon: <FaGitAlt className="bg-orange-600 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
         { name: 'Docker', icon: <SiDocker className="bg-blue-600 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
+        { name: 'Testing', icon: <GrTest className="bg-gray-800 text-white w-16 h-16 md:w-24 md:h-24 rounded-full p-3" /> },
     ];
 
     return (
-        <div className=" dark:bg-slate-950 dark:bg-opacity-50 backdrop-filter backdrop-blur-md mb-6 w-full">
+        <section className=" dark:bg-slate-950 dark:bg-opacity-50 backdrop-filter backdrop-blur-md mb-6 w-full" aria-labelledby="tecnologias-title">
+            <h2 id="tecnologias-title" className="sr-only">Tecnologias y herramientas</h2>
             <div className="w-full mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6">
-                <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Frontend</h2>
+                <h3 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Frontend</h3>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                     {frontend.map((tech, index) => (
                         <li key={index} className="relative group" onClick={() => handleIconClick(tech.name)} onMouseEnter={() => setSelectedTech(tech.name)} onMouseLeave={() => setSelectedTech(null)}>
@@ -70,7 +75,7 @@ const TechnologiesPage = () => {
                 </ul>
             </div>
             <div className="w-full mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6">
-                <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Backend</h2>
+                <h3 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Backend</h3>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                     {backend.map((tech, index) => (
                         <li key={index} className="relative group" onClick={() => handleIconClick(tech.name)} onMouseEnter={() => setSelectedTech(tech.name)} onMouseLeave={() => setSelectedTech(null)}>
@@ -87,7 +92,7 @@ const TechnologiesPage = () => {
                 </ul>
             </div>
             <div className="w-full mx-auto p-4 dark:bg-slate-900 dark:bg-opacity-50 backdrop-filter backdrop-blur-md rounded-tl-lg shadow-md mb-6">
-                <h2 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Herramientas<br className="block sm:hidden" /> <span className='text-hoverBG'>Relevantes</span></h2>
+                <h3 className="text-3xl text-center mb-10 font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">Herramientas<br className="block sm:hidden" /> <span className='text-hoverBG'>Relevantes</span></h3>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                     {technologies.map((tech, index) => (
                         <li key={index} className="relative group" onClick={() => handleIconClick(tech.name)} onMouseEnter={() => setSelectedTech(tech.name)} onMouseLeave={() => setSelectedTech(null)}>
@@ -103,7 +108,7 @@ const TechnologiesPage = () => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </section>
     );
 };
 
