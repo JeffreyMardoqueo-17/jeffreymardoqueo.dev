@@ -18,7 +18,7 @@ const images = [
   "/imgs/yo.jpeg",
   "/imgs/club.jpeg",
   "/imgs/documentando.jpeg",
-
+  "/imgs/Trabjaando.jpeg",
   "/imgs/nubes.jpeg",
 ];
 
