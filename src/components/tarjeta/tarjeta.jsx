@@ -10,6 +10,7 @@ const Tarjeta = ({ imagen, imagenes = [], nombre, descripcion, tecnologias, link
   const [slideActual, setSlideActual] = useState(0);
   const [enPausa, setEnPausa] = useState(false);
   const [modalAbierto, setModalAbierto] = useState(false);
+  const [expandido, setExpandido] = useState(false);
 
   const tieneCarrusel = slides.length > 1;
 
@@ -157,15 +158,22 @@ const Tarjeta = ({ imagen, imagenes = [], nombre, descripcion, tecnologias, link
             )}
           </div>
 
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-3">
+          <p className={`text-sm text-gray-600 dark:text-gray-400 mb-2 ${expandido ? "" : "line-clamp-3"}`}>
             {descripcion}
           </p>
+          
+          <button
+            onClick={() => setExpandido(!expandido)}
+            className="text-xs text-redPasion dark:text-redPasion font-semibold hover:underline mb-3 text-left"
+          >
+            {expandido ? "Ver menos" : "Ver más"}
+          </button>
 
-          <div className="mt-auto flex flex-wrap gap-2">
+          <div className="mt-auto overflow-x-auto flex gap-2 pb-1">
             {tecnologias.map((tecnologia, index) => (
               <span
                 key={index}
-                className="bg-gray-200 dark:bg-slate-700 px-2 py-1 text-xs rounded-full"
+                className="bg-gray-200 dark:bg-slate-700 px-2 py-1 text-xs rounded-full whitespace-nowrap flex-shrink-0"
               >
                 {tecnologia}
               </span>

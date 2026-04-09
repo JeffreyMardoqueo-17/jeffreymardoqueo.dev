@@ -3,6 +3,24 @@ import Tarjeta from "../tarjeta/tarjeta";
 
 // Array de proyectos
 const proyectos = [
+  {
+    "nombre": "MIZU - Sistema de Gestión Integral de Agua",
+    "descripcion": "Plataforma SaaS multi-tenant para la administración de proyectos de servicios de agua potable. Incluye gestión de usuarios, lectura de medidores, facturación, reuniones administrativas y validación de documentos de conformidad regulatoria.",
+    "tecnologias": ["Next.js", "React 19", "TypeScript", "TailwindCSS", "Shadcn/UI", "ASP.NET Core 8", "C#", "PostgreSQL", "Dapper", "JWT", "Cloudinary", "Docker y Docker Compose"],
+    "imagenes": [
+      "/imgs/Mizu/dasboard.png",
+      "/imgs/Mizu/login.png",
+      "/imgs/Mizu/registrar.png",
+      "/imgs/Mizu/registreradmin.png",
+      "/imgs/Mizu/usuarios.png",
+      "/imgs/Mizu/contadores.png",
+      "/imgs/Mizu/reunion.png",
+      "/imgs/Mizu/rolespermisos.png",
+      "/imgs/Mizu/directivas.png",
+      "/imgs/Mizu/documentosdeidentidad.png",
+    ],
+    "link": ""
+  },
 
   {
     nombre: "Clynic - Sistema de control de citas para clinicas",
