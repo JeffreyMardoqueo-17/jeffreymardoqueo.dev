@@ -17,34 +17,44 @@ const Welcome = () => {
       "
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-12 select-none">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center select-none">
           {/* TEXTO */}
           <div className="text-center md:text-left">
-            <h1 className="text-3xl font-bold leading-tight dark:text-white text-darkPurple sm:text-4xl lg:text-5xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-darkPurple dark:text-white">
               Hey 👋 soy{" "}
-              <span className="text-hoverBG block sm:inline">Jeffrey</span>
+              <span className="text-hoverBG block sm:inline">
+                Jeffrey
+              </span>
             </h1>
 
-            <p className="max-w-lg mx-auto md:mx-0 mt-4 text-lg sm:text-xl leading-relaxed text-darkPurple dark:text-lightPurple">
-              Desarrollador de software con experiencia en aplicaciones web.{" "}
-              <span className="text-hoverBG font-semibold block sm:inline">
-                Técnico en Ingeniería de Desarrollo de Software
-              </span>
+            <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-hoverBG">
+              Mid-Level Full Stack Developer
+            </h2>
+
+            <p className="max-w-xl mx-auto md:mx-0 mt-5 text-lg leading-relaxed text-darkPurple dark:text-lightPurple">
+              Desarrollador Full Stack con experiencia construyendo aplicaciones
+              web modernas utilizando{" "}
+              <span className="font-semibold text-hoverBG">
+                C#, ASP.NET Core, React, Next.js, TypeScript y PostgreSQL.
+              </span>{" "}
+              Me especializo en desarrollar APIs REST, arquitecturas escalables y
+              soluciones enfocadas en rendimiento, mantenibilidad y una excelente
+              experiencia de usuario.
             </p>
 
             {/* BOTONES */}
             <div
               className="
-              flex
-              flex-col
-              sm:flex-row
-              gap-4
-              mt-8
-              items-center
-              sm:items-start
-              justify-center
-              md:justify-start
-            "
+                flex
+                flex-col
+                sm:flex-row
+                gap-4
+                mt-8
+                items-center
+                sm:items-start
+                justify-center
+                md:justify-start
+              "
             >
               <a
                 href="/Document/Jeffrey_Marodoqueo_Jimenez_CV.pdf"
@@ -57,11 +67,12 @@ const Welcome = () => {
                   py-3 px-6
                   rounded-3xl
                   shadow-lg
-                  transition-transform
+                  transition-all
                   hover:scale-105
                 "
               >
-                <FiDownload size={20} /> Descargar CV
+                <FiDownload size={20} />
+                Descargar CV
               </a>
 
               <a
@@ -76,7 +87,7 @@ const Welcome = () => {
                   py-3 px-6
                   rounded-3xl
                   shadow-lg
-                  transition-transform
+                  transition-all
                   hover:scale-105
                 "
               >
@@ -96,7 +107,7 @@ const Welcome = () => {
                   py-3 px-6
                   rounded-3xl
                   shadow-lg
-                  transition-transform
+                  transition-all
                   hover:scale-105
                 "
               >
@@ -109,23 +120,20 @@ const Welcome = () => {
           {/* IMAGEN */}
           <div className="relative flex justify-center mt-10 md:mt-0">
             <img
-              src="/imgs/mia.jpeg"
+              src="/imgs/mianueva.jpg"
               alt="Retrato de Jeffrey Mardoqueo"
               loading="eager"
               decoding="async"
               className="
-    w-40 h-40
-    sm:w-52 sm:h-52
-    lg:w-72 lg:h-72
-    object-cover
-    rounded-full
-    shadow-lg
-    ring-4
-    border-10
-    ring-azul
-    dark:ring-red-500
-    transition-all
-  "
+      w-40 h-40
+      sm:w-52 sm:h-52
+      lg:w-72 lg:h-72
+      object-cover
+      rounded-full
+      shadow-xl
+      transition-all
+      border-4 border-hoverBG
+    "
             />
           </div>
         </div>
